@@ -16,66 +16,13 @@
 #X msg 36 85 \; pd-quick-guide vis \$1;
 #X obj 36 41 r open-quick-guide!;
 #X msg 36 63 1;
-#N canvas 421 157 787 718 quick-guide 0;
-#X obj 389 524 cnv 15 375 125 empty empty empty 20 12 0 14 -226533
--66577 0;
-#X obj 392 389 cnv 15 375 125 empty empty empty 20 12 0 14 -150893
--66577 0;
-#X obj 17 16 cnv 15 750 60 empty empty Datatonism_Quick-Guide 20 12
-0 14 -33289 -4034 0;
-#X text 19 99 FOLLOW THESE SIMPLE STEPS TO GET STARTED:;
-#X text 19 127 1 When starting the AUTOMATONISM you'll see a list of
-all current available modules to the right. Click the button to the
-left of the module you want to load and it will appear to the left
-in the parent window. The module list will then disappear. To call
-back the module list you can click the grey link in the upper left
-called "MODULES(esc) or simply upress "esc" on your keyboard;
-#X text 19 246 2 Create a BASIC-OSC from the module list.;
-#X text 20 422 4 Pure Data has an EDIT MODE and a PERFORMANCE MODE.
-To make patch connections between objects we need to be in EDIT MODE
-and to interact with the GUI we need to be in PERFORMANCE MODE. Toggle
-between the two modes with cmd+e.;
-#X text 19 312 3 Open the module list and create the module in the
-lower right corner called MAESTRO4(dac~). This is the digital-to-analog-converter
-and is one of the modules that passes on sound to your speakers. Now
-you can soon make a sound.;
-#X text 19 519 5 All inputs are at the top of the modules and all outputs
-are at the bottom. In EDIT MODE \, connect the BASIC-OSC's output CH1
-on the MAESTRO4. Now \, you should have sound. Switch to PERFORMANCE
-MODE and use the mouse to move the PITCH slider on the BASIC-OSC module.
-;
-#X text 20 622 6 Right click on any module and choose HELP to read
-more about a module's functions.;
-#X text 404 125 7 To save parameter states on each module \, you have
-to save the pd file \, like you normally would do from the FILE menu
-or cmd+s \, and then click the grey SAVE! canvas in the left bottom
-corner(or simply press ENTER on your keyboard) and you'll see the canvas
-change color from grey to green for a brief moment. All parameter values
-are now written to textfiles and can be loaded to the equivalent module
-and instance number next time the patch is loaded.;
-#X text 404 245 8 You can call modules without using the module list
-simply by creating a new object in pd and type the module's name. For
-the state saving mechanism to work properly you do need to give the
-module a unique numerical argument. Type "basic-osc 1" for an oscillator
-and "basic-osc 2" if you need another one. By using the MODULES list
-this unique numbering is done automatically for you. Use the RESET
-link in the upper left corner when starting a new patch as this will
-reset the counter of unique numbers for modules.;
-#X text 397 403 9 IMPORTANT!!! In order for Automatonism to work properly
-\, each patch needs to contain the correct folder structure. A folder--that
-you can name freely--must contain the folder "patch_editor_abs" and
-the pd-file "main.pd". Copy the entire main parent folder to start
-a new project. Please do not add the abstractions to your PD Search
-path \, because the state svaing system will be writing textfiles in
-your external folders.;
-#X text 391 534 ABOUT RESET BUTTON: Only use the RESET button when
-your canvas is empty. If you click it in the middle of a patch \, modules
-will start getting identical state saving numbers to already existing
-modules. In other words \, if you click it in the middle of a patch
-\, state saving WILL NOT WORK! The RESET button is there for when you
-start over \, and perhaps do not want to create "BASIC-OSC 99" \, but
-start from zero for a clearer view of the patch.;
-#X text 18 77 RIGHT+CLICK & CHOOSE 'HELP' ON ANY MODULE!;
+#N canvas 421 157 787 247 quick-guide 0;
+#X obj 17 16 cnv 15 750 60 empty empty Datatonism_About 20 12 0 14
+-33289 -4034 0;
+#X text 511 79 RIGHT+CLICK & CHOOSE 'HELP' ON ANY MODULE!;
+#X text 22 130 Datatonism is a project done for the course DT2213 given
+at KTH Royal Institute of Technology. It is a virtualization of the
+Dataton System 3000;
 #X restore 36 18 pd quick-guide;
 #X msg 38 178 1;
 #X obj 38 156 r open-signal-flow!;
@@ -153,109 +100,10 @@ signal or short impulse(square-wave) to function properly.;
 #X obj 36 266 r open-color-code!;
 #X msg 36 313 \; pd-color-code vis \$1;
 #X msg 37 404 1;
-#N canvas 7 24 377 372 manual 0;
-#X obj 28 82 bng 30 250 50 0 open-signal-flow! empty empty 10 7 0 10
--158136 -1 -262144;
-#X obj 49 82 bng 30 250 50 0 open-signal-flow! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 78 82 bng 30 250 50 0 open-signal-flow! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 109 82 bng 30 250 50 0 open-signal-flow! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 79 82 cnv 15 60 30 empty empty FLOW 6 12 0 14 -233017 -66577
-0;
-#X obj 18 82 cnv 15 60 30 empty empty SIGNAL 18 12 0 14 -233017 -66577
-0;
-#X obj 17 12 cnv 15 320 60 empty empty WELCOME-TO-THE-AUTOMATONISM-MANUAL!
-20 12 0 14 -150893 -262144 0;
-#X obj 19 119 bng 30 250 50 0 open-color-code! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 49 119 bng 30 250 50 0 open-color-code! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 79 119 bng 30 250 50 0 open-color-code! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 109 119 bng 30 250 50 0 open-color-code! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 79 119 cnv 15 60 30 empty empty CODE 6 12 0 14 -233017 -66577
-0;
-#X obj 18 119 cnv 15 60 30 empty empty COLOR 18 12 0 14 -233017 -66577
-0;
-#X obj 19 196 bng 30 250 50 0 open-help-files! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 18 157 bng 30 250 50 0 open-state-saving! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 48 157 bng 30 250 50 0 open-state-saving! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 78 157 bng 30 250 50 0 open-state-saving! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 108 157 bng 30 250 50 0 open-state-saving! empty empty 17 7
-0 10 -262144 -1 -1;
-#X obj 79 157 cnv 15 60 30 empty empty SAVING 6 12 0 14 -233017 -66577
-0;
-#X obj 18 157 cnv 15 60 30 empty empty STATE 18 12 0 14 -233017 -66577
-0;
-#X obj 49 196 bng 30 250 50 0 open-help-files! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 94 196 bng 30 250 50 0 open-help-files! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 109 196 bng 30 250 50 0 open-help-files! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 79 196 cnv 15 60 30 empty empty FILES 6 12 0 14 -233017 -66577
-0;
-#X obj 18 196 cnv 15 60 30 empty empty HELP 18 12 0 14 -233017 -66577
-0;
-#X obj 19 232 bng 30 250 50 0 open-folder-hierarchy! empty empty 17
-7 0 10 -262144 -1 -1;
-#X obj 49 232 bng 30 250 50 0 open-folder-hierarchy! empty empty 17
-7 0 10 -262144 -1 -1;
-#X obj 79 232 bng 30 250 50 0 open-folder-hierarchy! empty empty 17
-7 0 10 -262144 -1 -1;
-#X obj 139 232 bng 30 250 50 0 open-folder-hierarchy! empty empty 17
-7 0 10 -262144 -1 -1;
-#X obj 109 232 bng 30 250 50 0 open-folder-hierarchy! empty empty 17
-7 0 10 -262144 -1 -1;
-#X obj 78 232 cnv 15 100 30 empty empty HIERARCHY 20 12 0 14 -233017
--66577 0;
-#X obj 17 232 cnv 15 60 30 empty empty FOLDER 18 12 0 14 -233017 -66577
-0;
-#X obj 46 268 bng 30 250 50 0 open-feedback-loops! empty empty 17 7
-0 10 -262144 -1 -1;
-#X obj 46 304 bng 30 250 50 0 open-license! empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 16 268 bng 30 250 50 0 open-feedback-loops! empty empty 17 7
-0 10 -262144 -1 -1;
-#X obj 106 268 bng 30 250 50 0 open-feedback-loops! empty empty 17
-7 0 10 -262144 -1 -1;
-#X obj 76 268 bng 30 250 50 0 open-feedback-loops! empty empty 17 7
-0 10 -262144 -1 -1;
-#X obj 166 268 bng 30 250 50 0 open-feedback-loops! empty empty 17
-7 0 10 -262144 -1 -1;
-#X obj 136 268 bng 30 250 50 0 open-feedback-loops! empty empty 17
-7 0 10 -262144 -1 -1;
-#X obj 16 268 cnv 15 180 30 empty empty FEEDBACK-&-DSP-LOOPS 18 12
-0 14 -233017 -66577 0;
-#X obj 16 304 bng 30 250 50 0 open-license! empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 106 304 bng 30 250 50 0 open-license! empty empty 17 7 0 10
--262144 -1 -1;
-#X obj 76 304 bng 30 250 50 0 open-license! empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 16 304 cnv 15 120 30 empty empty LICENSE 18 12 0 14 -233017
--66577 0;
-#X obj 154 81 bng 30 250 50 0 open-external-msg! empty empty 10 7 0
-10 -158136 -1 -262144;
-#X obj 184 81 bng 30 250 50 0 open-external-msg! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 213 81 bng 30 250 50 0 open-external-msg! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 273 81 bng 30 250 50 0 open-external-msg! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 243 81 bng 30 250 50 0 open-external-msg! empty empty 17 7 0
-10 -262144 -1 -1;
-#X obj 152 81 cnv 15 120 30 empty empty EXTERNAL 18 12 0 14 -233017
--66577 0;
-#X obj 237 81 cnv 15 80 30 empty empty MESSAGES 6 12 0 14 -233017 -66577
-0;
+#N canvas 569 206 377 372 manual 0;
+#X obj 17 12 cnv 15 320 60 empty empty Datatonism_Manual 20 12 0 14
+-33289 -4034 0;
+#X text 30 98 Work in progress;
 #X restore 37 358 pd manual;
 #X msg 37 429 \; pd-manual vis \$1;
 #X obj 37 382 r open-manual!;
@@ -617,7 +465,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 38 r \$0-reset!;
 #X msg 177 60 0;
 #X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 32 256;
+10 -262144 -1 -1 33 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -1282,14 +1130,12 @@ and send to the name of the module \, for example [s basic-osc];
 #X text 25 685 DO NOT DELETE THESE OBJECTS:;
 #X obj 2 1 cnv 10 150 25 empty empty DATATONISM 15 13 0 20 -1 -4034
 0;
-#X obj 8 38 bng 20 250 50 0 open-quick-guide! empty <--QUICK-GUIDE
-25 10 0 15 -4034 -1 -1;
+#X obj 8 38 bng 20 250 50 0 open-quick-guide! empty <--ABOUT 25 10
+0 15 -4034 -1 -1;
 #X obj 8 69 bng 20 250 50 0 open-manual! empty <--MANUAL 25 10 0 15
 -4034 -1 -1;
 #X obj 8 100 bng 20 250 50 0 open-modules! empty <--MODULES(esc) 25
 10 0 15 -4034 -1 -1;
-#X obj 8 199 bng 20 250 50 0 open-external-msg! empty <--EXTERNAL-MESSAGES!
-25 10 0 15 -4034 -1 -1;
 #X obj 8 132 bng 20 250 50 0 SAVE-S SAVE-R <--SAVE!(enter) 25 10 0
 15 -4034 -4034 -1;
 #X floatatom 8 236 5 0 0 1 CPU% CPU -;
