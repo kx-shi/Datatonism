@@ -1,0 +1,224 @@
+#N canvas 301 224 1366 679 12;
+#N canvas 214 287 800 560 sound_gen 1;
+#X obj 226 49 inlet~;
+#X obj 227 350 outlet~;
+#X obj 292 49 inlet;
+#X obj 372 129 inlet;
+#X obj 226 74 *~ 64;
+#X obj 226 99 mtof~;
+#X obj 227 197 osc~;
+#X obj 292 74 mtof~;
+#X obj 372 154 /~ 127;
+#X obj 227 262 *~;
+#X text 440 130 Divide by 127 as the slider is from 1-128;
+#X text 439 146 and gain is 0-1;
+#X text 79 51 64*2 = 128;
+#X text 81 14 Left inlet modulating frequency. Amplitude of signal
+determines modulation index;
+#X connect 0 0 4 0;
+#X connect 2 0 7 0;
+#X connect 3 0 8 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 9 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 1;
+#X connect 9 0 1 0;
+#X restore 92 236 pd sound_gen;
+#X obj 46 200 hsl 128 15 0 127 0 0 empty empty freq -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 185 200 hsl 128 15 0 127 0 0 empty empty gain -2 -8 0 10 -262144
+-1 -1 0 1;
+#N canvas 650 416 800 560 sound_gen 0;
+#X obj 226 49 inlet~;
+#X obj 227 350 outlet~;
+#X obj 292 49 inlet;
+#X obj 372 129 inlet;
+#X obj 226 74 *~ 64;
+#X obj 226 99 mtof~;
+#X obj 227 197 osc~;
+#X obj 292 74 mtof~;
+#X obj 372 154 /~ 127;
+#X obj 227 262 *~;
+#X connect 0 0 4 0;
+#X connect 2 0 7 0;
+#X connect 3 0 8 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 9 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 1;
+#X connect 9 0 1 0;
+#X restore 737 229 pd sound_gen;
+#X obj 692 198 hsl 128 15 0 127 0 0 empty empty freq -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 834 198 hsl 128 15 0 127 0 0 empty empty gain -2 -8 0 10 -262144
+-1 -1 0 1;
+#N canvas 784 299 800 560 sound_gen 0;
+#X obj 226 49 inlet~;
+#X obj 227 350 outlet~;
+#X obj 292 49 inlet;
+#X obj 372 129 inlet;
+#X obj 226 74 *~ 64;
+#X obj 226 99 mtof~;
+#X obj 227 197 osc~;
+#X obj 292 74 mtof~;
+#X obj 372 154 /~ 127;
+#X obj 227 262 *~;
+#X connect 0 0 4 0;
+#X connect 2 0 7 0;
+#X connect 3 0 8 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 9 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 1;
+#X connect 9 0 1 0;
+#X restore 408 232 pd sound_gen;
+#X obj 365 199 hsl 128 15 0 127 0 0 empty empty freq -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 506 199 hsl 128 15 0 127 0 0 empty empty gain -2 -8 0 10 -262144
+-1 -1 0 1;
+#N canvas 574 410 800 560 sound_gen 0;
+#X obj 226 49 inlet~;
+#X obj 227 350 outlet~;
+#X obj 292 49 inlet;
+#X obj 372 129 inlet;
+#X obj 226 74 *~ 64;
+#X obj 226 99 mtof~;
+#X obj 227 197 osc~;
+#X obj 292 74 mtof~;
+#X obj 372 154 /~ 127;
+#X obj 227 262 *~;
+#X connect 0 0 4 0;
+#X connect 2 0 7 0;
+#X connect 3 0 8 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 9 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 1;
+#X connect 9 0 1 0;
+#X restore 1081 229 pd sound_gen;
+#X obj 1033 197 hsl 128 15 0 127 0 0 empty empty freq -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 1176 197 hsl 128 15 0 127 0 0 empty empty gain -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 575 497 dac~;
+#X obj 576 450 *~ 0.2;
+#X obj 1076 341 send~ feedback;
+#X obj 30 334 r~ feedback;
+#X obj 766 643 delwrite~ feedback2 500;
+#X obj 766 585 delread~ feedback2 500;
+#X obj 766 614 *~;
+#N canvas 279 122 1072 627 waves 0;
+#X obj 176 149 osc~;
+#X obj 338 107 phasor~;
+#X obj 342 143 expr~ $v1 > 0.5;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array array1 100 float 3;
+#A 0 -0.609714 -0.610637 -0.611559 -0.612482 -0.613405 -0.614327 -0.61525
+-0.616164 -0.617078 -0.617992 -0.618906 -0.619819 -0.620733 -0.621647
+-0.622561 -0.623475 -0.624389 -0.625299 -0.626203 -0.627108 -0.628013
+-0.628918 -0.629823 -0.630728 -0.631633 -0.632538 -0.633443 -0.634348
+-0.635244 -0.63614 -0.637036 -0.637932 -0.638828 -0.639724 -0.64062
+-0.641516 -0.642411 -0.643307 -0.644199 -0.645086 -0.645973 -0.64686
+-0.647746 -0.648633 -0.64952 -0.650406 -0.651293 -0.65218 -0.653066
+-0.653945 -0.654822 -0.6557 -0.656577 -0.657454 -0.658332 -0.659209
+-0.660086 -0.660964 -0.661841 -0.662715 -0.663583 -0.664451 -0.665319
+-0.666187 -0.667054 -0.667922 -0.66879 -0.669658 -0.670526 -0.671394
+-0.672254 -0.673112 -0.673971 -0.674829 -0.675687 -0.676545 -0.677404
+-0.678262 -0.67912 -0.679978 -0.680834 -0.681683 -0.682531 -0.68338
+-0.684228 -0.685077 -0.685925 -0.686774 -0.687622 -0.688471 -0.68932
+-0.690161 -0.691 -0.691838 -0.692677 -0.693516 -0.694354 -0.695193
+-0.696032 -0.69687;
+#X coords 0 2 100 -2 200 140 1 0 0;
+#X restore 445 463 graph;
+#X obj 54 423 tabwrite~ array1;
+#X obj 54 395 metro 500;
+#X obj 54 374 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 342 168 *~ 2;
+#X obj 342 193 -~ 1;
+#X obj 261 29 hsl 128 15 0 127 0 0 empty empty frequency -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 258 49 mtof;
+#X obj 725 149 hsl 128 15 0 127 0 0 empty empty cross-fader -2 -8 0
+10 -262144 -1 -1 0 1;
+#X obj 722 174 / 127;
+#X obj 161 259 *~;
+#X obj 360 249 *~;
+#X obj 722 206 - 1;
+#X obj 722 231 * -1;
+#X floatatom 815 205 5 0 0 0 - - -;
+#X floatatom 790 287 5 0 0 0 - - -;
+#X obj 335 421 dac~;
+#X obj 336 386 *~ 0.1;
+#X text 598 321 we cross-fade between the two waves by increasing amplitude
+in one oscillator and simultaneosuly decreasing it in the other in
+proportion;
+#X text 400 110 creating square wave;
+#X connect 0 0 13 0;
+#X connect 1 0 2 0;
+#X connect 2 0 7 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 14 0;
+#X connect 9 0 10 0;
+#X connect 10 0 1 0;
+#X connect 10 0 0 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 1;
+#X connect 12 0 15 0;
+#X connect 12 0 17 0;
+#X connect 13 0 4 0;
+#X connect 13 0 20 0;
+#X connect 14 0 4 0;
+#X connect 14 0 20 0;
+#X connect 15 0 16 0;
+#X connect 16 0 18 0;
+#X connect 16 0 14 1;
+#X connect 20 0 19 0;
+#X connect 20 0 19 1;
+#X restore 119 601 pd waves;
+#X text 80 59 Each sound_gen subpatch is a channel;
+#X text 79 97 1 modulating frequency;
+#X text 79 114 2 carrier frequency;
+#X text 79 130 3 gain of signal;
+#X text 80 77 Each sound_gen has three inlets:;
+#X text 934 370 To avoid DSP loops \, we use send/recieve between the
+first and last sound_gen;
+#X text 43 14 This is an example of how we can achieve the 'chaotic
+system' shown in the Tutorial;
+#X text 41 564 This subpatch is an example of how we can achieve switching
+between sine- and square wave;
+#X text 763 559 This will be handy for the reverb module;
+#X text 944 599 I don't remember why we multiply but I think it has
+something to do with wanting the reverbed sound to 'ring out'?;
+#X text 121 166 CHANNEL 1;
+#X text 458 158 CHANNEL 2;
+#X text 783 156 CHANNEL 3;
+#X text 1117 157 CHANNEL 4;
+#X text 228 244 output modulates input;
+#X connect 0 0 13 0;
+#X connect 0 0 6 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 2;
+#X connect 3 0 13 0;
+#X connect 3 0 9 0;
+#X connect 4 0 3 1;
+#X connect 5 0 3 2;
+#X connect 6 0 13 0;
+#X connect 6 0 3 0;
+#X connect 7 0 6 1;
+#X connect 8 0 6 2;
+#X connect 9 0 13 0;
+#X connect 9 0 14 0;
+#X connect 10 0 9 1;
+#X connect 11 0 9 2;
+#X connect 13 0 12 0;
+#X connect 13 0 12 1;
+#X connect 15 0 0 0;
+#X connect 17 0 18 0;
+#X connect 18 0 16 0;
