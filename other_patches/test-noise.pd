@@ -1,0 +1,40 @@
+#N canvas 112 53 1414 957 12;
+#X declare -lib moonlib;
+#X obj 101 118 cnv 15 200 200 empty empty 3004_NOISE_GENERATOR 20 12
+0 14 -233017 -66577 0;
+#X obj 320 100 inlet~ A;
+#X obj 463 102 inlet~ B;
+#X obj 319 423 outlet~ A;
+#X obj 468 422 outlet~ B;
+#X obj 364 161 noise~;
+#X obj 364 262 lop~;
+#X obj 59 360 declare -lib moonlib;
+#X obj 167 161 moonlib/mknob 100 400 0 127 0 0 \$0-noise-lowpass-s
+\$0-noise-lowpass-r LOW_PASS_FILTER -2 -6 0 8 -262144 -1 -1 10600 1
+;
+#X obj 166 247 moonlib/mknob 100 400 0 127 0 0 \$0-noise-volume-s \$0-noise-volume-r
+VOLUME -2 -6 0 8 -258113 -1 -1 0 1;
+#X obj 364 295 *~;
+#X obj 389 185 mtof;
+#X obj 519 172 / 127;
+#X obj 519 223 line~;
+#X obj 519 199 pack 0 50;
+#X obj 368 134 r \$0-noise-lowpass-s;
+#X obj 519 133 r \$0-noise-volume-s;
+#X obj 389 211 pack 0 50;
+#X obj 389 237 line;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 5 0 6 0;
+#X connect 6 0 10 0;
+#X connect 10 0 3 0;
+#X connect 10 0 4 0;
+#X connect 11 0 17 0;
+#X connect 12 0 14 0;
+#X connect 13 0 10 1;
+#X connect 14 0 13 0;
+#X connect 15 0 11 0;
+#X connect 16 0 12 0;
+#X connect 17 0 18 0;
+#X connect 18 0 6 1;
+#X coords 0 -1 1 1 202 220 1 100 100;
