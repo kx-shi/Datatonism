@@ -9,7 +9,7 @@
 #X obj 857 241 line~;
 #X obj 645 176 pack 0 50;
 #X obj 857 199 pack 0 50;
-#X obj 101 102 cnv 15 428 316 empty empty NOISE_GENERATOR_3004 130
+#X obj 101 101 cnv 15 428 316 empty empty NOISE_GENERATOR_3004 130
 12 0 14 -233017 -66577 0;
 #X obj 100 439 declare -lib moonlib;
 #X obj 216 265 moonlib/mknob 25 100 0 127 0 0 \$0-noice-lowpass-s \$0-noice-lowpass-r
