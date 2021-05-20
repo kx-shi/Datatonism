@@ -1,10 +1,26 @@
-#N canvas 44 26 1410 728 10;
+#N canvas -1 25 1410 728 10;
 #X declare -lib moonlib;
-#X obj 610 473 r \$0-channel1-volume-s;
-#X obj 642 492 r \$0-channel1-pan-s;
-#X obj 801 474 r \$0-channel2-volume-s;
-#X obj 833 492 r \$0-channel2-pan-s;
-#X obj 564 294 *~;
+#X obj 764 366 r \$0-channel1-volume-s;
+#X obj 796 385 r \$0-channel1-pan-s;
+#X obj 1028 370 r \$0-channel2-volume-s;
+#X obj 1060 388 r \$0-channel2-pan-s;
+#X obj 874 260 *~;
+#N canvas 612 128 450 300 rs0 0;
+#X obj 153 83 inlet;
+#X obj 151 110 == 0;
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 149 184 line~;
+#X msg 148 160 \$1 100;
+#X obj 147 215 outlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X restore 889 210 pd rs0;
+#X obj 921 260 *~;
+#X obj 733 412 ../other_patches/volumeandpan~, f 11;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
@@ -18,23 +34,7 @@
 #X connect 2 0 4 0;
 #X connect 3 0 5 0;
 #X connect 4 0 3 0;
-#X restore 579 244 pd rs0;
-#X obj 611 294 *~;
-#X obj 579 519 ../other_patches/volumeandpan~, f 11;
-#N canvas 612 128 450 300 rs0 0;
-#X obj 153 83 inlet;
-#X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 149 184 line~;
-#X msg 148 160 \$1 100;
-#X obj 147 215 outlet~;
-#X connect 0 0 1 0;
-#X connect 1 0 2 0;
-#X connect 2 0 4 0;
-#X connect 3 0 5 0;
-#X connect 4 0 3 0;
-#X restore 762 241 pd rs0;
+#X restore 1072 207 pd rs0;
 #N canvas 612 128 450 300 rs1 0;
 #X obj 153 83 inlet;
 #X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -48,10 +48,10 @@
 #X connect 2 0 4 0;
 #X connect 3 0 2 0;
 #X connect 5 0 1 0;
-#X restore 804 241 pd rs1;
-#X obj 747 288 *~;
-#X obj 788 288 *~;
-#X obj 770 519 ../other_patches/volumeandpan~, f 11;
+#X restore 1114 207 pd rs1;
+#X obj 1057 254 *~;
+#X obj 1098 254 *~;
+#X obj 997 415 ../other_patches/volumeandpan~, f 11;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
@@ -65,7 +65,7 @@
 #X connect 2 0 4 0;
 #X connect 3 0 5 0;
 #X connect 4 0 3 0;
-#X restore 970 239 pd rs0;
+#X restore 1280 205 pd rs0;
 #N canvas 612 128 450 300 rs1 0;
 #X obj 153 83 inlet;
 #X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -79,7 +79,7 @@
 #X connect 2 0 4 0;
 #X connect 3 0 2 0;
 #X connect 5 0 1 0;
-#X restore 1015 238 pd rs1;
+#X restore 1325 204 pd rs1;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
@@ -93,7 +93,7 @@
 #X connect 2 0 4 0;
 #X connect 3 0 5 0;
 #X connect 4 0 3 0;
-#X restore 1162 239 pd rs0;
+#X restore 1472 205 pd rs0;
 #N canvas 612 128 450 300 rs1 0;
 #X obj 153 83 inlet;
 #X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -107,21 +107,21 @@
 #X connect 2 0 4 0;
 #X connect 3 0 2 0;
 #X connect 5 0 1 0;
-#X restore 1204 239 pd rs1;
-#X obj 955 282 *~;
-#X obj 1000 282 *~;
-#X obj 971 520 ../other_patches/volumeandpan~, f 11;
-#X obj 1149 286 *~;
-#X obj 1191 286 *~;
-#X obj 1164 521 ../other_patches/volumeandpan~, f 11;
-#X obj 1002 474 r \$0-channel3-volume-s;
-#X obj 1034 493 r \$0-channel3-pan-s;
-#X obj 1195 477 r \$0-channel4-volume-s;
-#X obj 1227 496 r \$0-channel4-pan-s;
-#X obj 579 213 r \$0-switch1-s;
-#X obj 762 213 r \$0-switch2-s;
-#X obj 983 208 r \$0-switch3-s;
-#X obj 1163 208 r \$0-switch4-s;
+#X restore 1514 205 pd rs1;
+#X obj 1265 248 *~;
+#X obj 1310 248 *~;
+#X obj 1259 417 ../other_patches/volumeandpan~, f 11;
+#X obj 1459 252 *~;
+#X obj 1501 252 *~;
+#X obj 1543 413 ../other_patches/volumeandpan~, f 11;
+#X obj 1290 371 r \$0-channel3-volume-s;
+#X obj 1322 390 r \$0-channel3-pan-s;
+#X obj 1574 369 r \$0-channel4-volume-s;
+#X obj 1606 388 r \$0-channel4-pan-s;
+#X obj 889 179 r \$0-switch1-s;
+#X obj 1072 179 r \$0-switch2-s;
+#X obj 1293 174 r \$0-switch3-s;
+#X obj 1473 174 r \$0-switch4-s;
 #X obj 101 103 cnv 15 428 314 empty empty Universal-Mixer_3205 20 35
 0 14 -233017 -66577 0;
 #X text 113 189 -- -- 0, f 9;
@@ -138,16 +138,10 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X text 302 290 -- -- -40;
 #X text 302 312 -- -- ∞, f 9;
 #X text 301 237 -- -- -20;
-#X obj 177 342 moonlib/mknob 20 90 0 127 0 0 \$0-channel1-pan-s \$0-channel1-pan-r
-empty -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 272 343 moonlib/mknob 20 90 0 127 0 0 \$0-channel2-pan-s \$0-channel2-pan-r
-empty -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 364 344 moonlib/mknob 20 90 0 127 0 0 \$0-channel3-pan-s \$0-channel3-pan-r
-empty -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 460 340 moonlib/mknob 20 90 0 127 0 0 \$0-channel4-pan-s \$0-channel4-pan-r
-empty -2 -6 0 8 -1 -262144 -1 0 1;
+#X obj 177 344 moonlib/mknob 20 90 0 127 0 0 \$0-channel1-pan-s \$0-channel1-pan-r
+1<-->2 -5 26 0 8 -1 -262144 -1 0 1;
 #X obj 178 173 hradio 12 1 0 2 \$0-switch1-s \$0-switch1-r 1_A 0 -8
-0 10 -262144 -1 -1 1;
+0 10 -262144 -1 -1 0;
 #X obj 274 173 hradio 12 1 0 2 \$0-switch2-s \$0-switch2-r 2_B 0 -8
 0 10 -262144 -1 -1 0;
 #X obj 364 173 hradio 12 1 0 2 \$0-switch3-s \$0-switch3-r 3_A 0 -8
@@ -160,14 +154,6 @@ empty -2 -6 0 8 -1 -262144 -1 0 1;
 0;
 #X obj 381 331 cnv 15 1 1 empty empty CH4 20 12 0 14 -233017 -66577
 0;
-#X obj 153 356 cnv 15 1 1 empty empty 1<->2 20 12 0 10 -233017 -66577
-0;
-#X obj 247 358 cnv 15 1 1 empty empty 1<->2 20 12 0 10 -233017 -66577
-0;
-#X obj 438 356 cnv 15 1 1 empty empty 3<->4 20 12 0 10 -233017 -66577
-0;
-#X obj 341 359 cnv 15 1 1 empty empty 3<->4 20 12 0 10 -233017 -66577
-0;
 #X text 503 400 Mon;
 #X obj 311 195 vsl 15 128 0 127 0 0 \$0-channel3-volume-s \$0-channel3-volume-r
 empty 0 -9 0 10 -262144 -1 -1 0 1;
@@ -175,11 +161,11 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X text 182 400 B;
 #X text 116 104 A;
 #X text 188 104 B;
-#X obj 736 678 outlet~ A;
-#X obj 999 679 outlet~ B;
-#X obj 730 133 inlet~ Ch1;
-#X obj 816 133 inlet~ Ch2;
-#X obj 903 133 inlet~ Ch3;
+#X obj 1046 644 outlet~ A;
+#X obj 1309 645 outlet~ B;
+#X obj 1040 99 inlet~ Ch1;
+#X obj 1126 99 inlet~ Ch2;
+#X obj 1213 99 inlet~ Ch3;
 #X text 255 104 Ch1;
 #X text 320 104 Ch2;
 #X text 389 103 Ch3;
@@ -190,14 +176,14 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X text 447 400 Ch4;
 #X obj 99 331 cnv 15 1 1 empty empty CH1 20 12 0 14 -233017 -66577
 0;
-#X obj 997 133 inlet~ Ch4;
-#X obj 642 607 outlet~ Ch1;
-#X obj 732 607 outlet~ Ch2;
-#X obj 1024 607 outlet~ Ch3;
-#X obj 1113 607 outlet~ Ch4;
-#X obj 860 679 outlet~ Mon;
-#X obj 832 63 inlet~ A;
-#X obj 908 63 inlet~ B;
+#X obj 1307 99 inlet~ Ch4;
+#X obj 791 567 outlet~ Ch1;
+#X obj 981 572 outlet~ Ch2;
+#X obj 1334 573 outlet~ Ch3;
+#X obj 1514 568 outlet~ Ch4;
+#X obj 1170 645 outlet~ Mon;
+#X obj 1142 29 inlet~ A;
+#X obj 1218 29 inlet~ B;
 #N canvas 612 128 450 300 rs1 0;
 #X obj 153 83 inlet;
 #X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -211,7 +197,7 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X connect 2 0 4 0;
 #X connect 3 0 2 0;
 #X connect 5 0 1 0;
-#X restore 626 244 pd rs1;
+#X restore 936 210 pd rs1;
 #X text 208 189 -- -- 0, f 9;
 #X text 206 214 -- -- -10;
 #X text 207 262 -- -- -30;
@@ -229,112 +215,172 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X obj 407 196 vsl 15 128 0 127 0 0 \$0-channel4-volume-s \$0-channel4-volume-r
 empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X obj 100 445 declare -lib moonlib;
-#X obj 176 204 moonlib/mknob 20 90 0 127 0 0 \$0-channel1-panAB-s \$0-channel1-panAB-r
-empty -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 271 203 moonlib/mknob 20 90 0 127 0 0 \$0-channel2-panAB-s \$0-channel2-panAB-r
-empty -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 366 202 moonlib/mknob 20 90 0 127 0 0 \$0-channel3-panAB-s \$0-channel3-panAB-r
-empty -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 459 201 moonlib/mknob 20 90 0 127 0 0 \$0-channel4-panAB-s \$0-channel4-panAB-r
-empty -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 152 217 cnv 15 1 1 empty empty A<->B 20 12 0 10 -233017 -66577
-0;
-#X obj 247 217 cnv 15 1 1 empty empty A<->B 20 12 0 10 -233017 -66577
-0;
-#X obj 343 216 cnv 15 1 1 empty empty A<->B 20 12 0 10 -233017 -66577
-0;
-#X obj 435 214 cnv 15 1 1 empty empty A<->B 20 12 0 10 -233017 -66577
-0;
-#X obj 618 371 r \$0-channel1-panAB-s;
-#X obj 618 410 ../other_patches/pan~;
-#X obj 618 390 / 127;
-#X obj 797 410 ../other_patches/pan~;
-#X obj 797 390 / 127;
-#X obj 1003 410 ../other_patches/pan~;
-#X obj 1003 390 / 127;
-#X obj 1213 410 ../other_patches/pan~;
-#X obj 1213 390 / 127;
-#X obj 797 371 r \$0-channel2-panAB-s;
-#X obj 1003 371 r \$0-channel3-panAB-s;
-#X obj 1213 371 r \$0-channel4-panAB-s;
+#X obj 177 199 moonlib/mknob 20 90 0 127 0 0 \$0-channel1-panAB-s \$0-channel1-panAB-r
+A<-->B -2 26 0 8 -1 -262144 -1 0 1;
+#X obj 878 300 r \$0-channel1-panAB-s;
+#X obj 878 339 ../other_patches/pan~;
+#X obj 879 320 / 127;
+#X obj 1157 344 ../other_patches/pan~;
+#X obj 1157 324 / 127;
+#X obj 1424 345 ../other_patches/pan~;
+#X obj 1424 325 / 127;
+#X obj 1724 344 ../other_patches/pan~;
+#X obj 1724 324 / 127;
+#X obj 1157 305 r \$0-channel2-panAB-s;
+#X obj 1424 306 r \$0-channel3-panAB-s;
+#X obj 1724 305 r \$0-channel4-panAB-s;
+#X obj 789 510 *~;
+#N canvas 612 128 450 300 rs0 0;
+#X obj 153 83 inlet;
+#X obj 151 110 == 0;
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 149 184 line~;
+#X msg 148 160 \$1 100;
+#X obj 147 215 outlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X restore 804 490 pd rs0;
+#X obj 836 510 *~;
+#N canvas 612 128 450 300 rs1 0;
+#X obj 153 83 inlet;
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 149 184 line~;
+#X msg 148 160 \$1 100;
+#X obj 147 215 outlet~;
+#X obj 151 110 == 1;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 1 0;
+#X restore 851 490 pd rs1;
+#X obj 883 510 *~;
+#N canvas 612 128 450 300 rs2 0;
+#X obj 153 83 inlet;
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 149 184 line~;
+#X msg 148 160 \$1 100;
+#X obj 147 215 outlet~;
+#X obj 151 110 == 2;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 1 0;
+#X restore 898 489 pd rs2;
+#X obj 804 468 r \$0-switch11-s;
+#X obj 178 267 vradio 15 1 0 3 empty empty PRE-OFF-POST -8 -8 0 6 -262144
+-1 -1 0;
+#X obj 271 197 moonlib/mknob 20 90 0 127 0 0 \$0-channel2-panAB-s \$0-channel2-panAB-r
+A<-->B -2 26 0 8 -1 -262144 -1 0 1;
+#X obj 363 196 moonlib/mknob 20 90 0 127 0 0 \$0-channel3-panAB-s \$0-channel3-panAB-r
+A<-->B -2 26 0 8 -1 -262144 -1 0 1;
+#X obj 460 195 moonlib/mknob 20 90 0 127 0 0 \$0-channel4-panAB-s \$0-channel4-panAB-r
+A<-->B -2 26 0 8 -1 -262144 -1 0 1;
+#X obj 270 267 vradio 15 1 0 3 empty empty PRE-OFF-POST -8 -8 0 6 -262144
+-1 -1 0;
+#X obj 365 266 vradio 15 1 0 3 empty empty PRE-OFF-POST -8 -8 0 6 -262144
+-1 -1 0;
+#X obj 460 265 vradio 15 1 0 3 empty empty PRE-OFF-POST -8 -8 0 6 -262144
+-1 -1 0;
+#X obj 270 344 moonlib/mknob 20 90 0 127 0 0 \$0-channel2-pan-s \$0-channel2-pan-r
+1<-->2 -5 26 0 8 -1 -262144 -1 0 1;
+#X obj 364 345 moonlib/mknob 20 90 0 127 0 0 \$0-channel3-pan-s \$0-channel3-pan-r
+3<-->4 -5 26 0 8 -1 -262144 -1 0 1;
+#X obj 460 344 moonlib/mknob 20 90 0 127 0 0 \$0-channel4-pan-s \$0-channel4-pan-r
+3<-->4 -5 26 0 8 -1 -262144 -1 0 1;
 #X connect 0 0 7 1;
 #X connect 1 0 7 2;
 #X connect 2 0 12 1;
 #X connect 3 0 12 2;
-#X connect 4 0 7 0;
-#X connect 4 0 113 0;
+#X connect 4 0 99 0;
+#X connect 4 0 114 0;
 #X connect 5 0 4 1;
 #X connect 6 0 7 0;
-#X connect 6 0 113 0;
-#X connect 7 0 81 0;
-#X connect 7 1 82 0;
+#X connect 6 0 99 0;
+#X connect 7 0 110 0;
+#X connect 7 1 75 0;
 #X connect 8 0 10 1;
 #X connect 9 0 11 1;
 #X connect 10 0 12 0;
-#X connect 10 0 115 0;
+#X connect 10 0 101 0;
 #X connect 11 0 12 0;
-#X connect 11 0 115 0;
-#X connect 12 0 81 0;
-#X connect 12 1 82 0;
+#X connect 11 0 101 0;
+#X connect 12 0 74 0;
+#X connect 12 1 75 0;
 #X connect 13 0 17 1;
 #X connect 14 0 18 1;
 #X connect 15 0 20 1;
 #X connect 16 0 21 1;
 #X connect 17 0 19 0;
-#X connect 17 0 117 0;
+#X connect 17 0 103 0;
 #X connect 18 0 19 0;
-#X connect 18 0 117 0;
-#X connect 19 0 83 0;
-#X connect 19 1 84 0;
+#X connect 18 0 103 0;
+#X connect 19 0 76 0;
+#X connect 19 1 77 0;
 #X connect 20 0 22 0;
-#X connect 20 0 119 0;
+#X connect 20 0 105 0;
 #X connect 21 0 22 0;
-#X connect 21 0 119 0;
-#X connect 22 0 83 0;
-#X connect 22 1 84 0;
+#X connect 21 0 105 0;
+#X connect 22 0 76 0;
+#X connect 22 1 77 0;
 #X connect 23 0 19 1;
 #X connect 24 0 19 2;
 #X connect 25 0 22 1;
 #X connect 26 0 22 2;
 #X connect 27 0 5 0;
-#X connect 27 0 88 0;
+#X connect 27 0 81 0;
 #X connect 28 0 8 0;
 #X connect 28 0 9 0;
 #X connect 29 0 13 0;
 #X connect 29 0 14 0;
 #X connect 30 0 15 0;
 #X connect 30 0 16 0;
-#X connect 68 0 4 0;
-#X connect 69 0 10 0;
-#X connect 70 0 17 0;
-#X connect 80 0 20 0;
-#X connect 86 0 6 0;
-#X connect 86 0 18 0;
-#X connect 87 0 11 0;
-#X connect 87 0 21 0;
-#X connect 88 0 6 1;
-#X connect 112 0 114 0;
-#X connect 113 0 66 0;
-#X connect 113 0 85 0;
-#X connect 113 1 67 0;
-#X connect 113 1 85 0;
-#X connect 114 0 113 1;
-#X connect 115 0 66 0;
-#X connect 115 0 85 0;
-#X connect 115 1 67 0;
-#X connect 115 1 85 0;
-#X connect 116 0 115 1;
-#X connect 117 0 66 0;
-#X connect 117 0 85 0;
-#X connect 117 1 67 0;
-#X connect 117 1 85 0;
-#X connect 118 0 117 1;
-#X connect 119 0 66 0;
-#X connect 119 0 85 0;
-#X connect 119 1 67 0;
-#X connect 119 1 85 0;
-#X connect 120 0 119 1;
-#X connect 121 0 116 0;
-#X connect 122 0 118 0;
-#X connect 123 0 120 0;
+#X connect 61 0 4 0;
+#X connect 62 0 10 0;
+#X connect 63 0 17 0;
+#X connect 73 0 20 0;
+#X connect 79 0 6 0;
+#X connect 79 0 18 0;
+#X connect 80 0 11 0;
+#X connect 80 0 21 0;
+#X connect 81 0 6 1;
+#X connect 98 0 100 0;
+#X connect 99 0 59 0;
+#X connect 99 0 78 0;
+#X connect 99 1 60 0;
+#X connect 99 1 78 0;
+#X connect 100 0 99 1;
+#X connect 101 0 59 0;
+#X connect 101 0 78 0;
+#X connect 101 1 60 0;
+#X connect 101 1 78 0;
+#X connect 102 0 101 1;
+#X connect 103 0 59 0;
+#X connect 103 0 78 0;
+#X connect 103 1 60 0;
+#X connect 103 1 78 0;
+#X connect 104 0 103 1;
+#X connect 105 0 59 0;
+#X connect 105 0 78 0;
+#X connect 105 1 60 0;
+#X connect 105 1 78 0;
+#X connect 106 0 105 1;
+#X connect 107 0 102 0;
+#X connect 108 0 104 0;
+#X connect 109 0 106 0;
+#X connect 110 0 74 0;
+#X connect 111 0 110 1;
+#X connect 113 0 112 1;
+#X connect 114 0 74 0;
+#X connect 115 0 114 1;
+#X connect 116 0 111 0;
+#X connect 116 0 113 0;
+#X connect 116 0 115 0;
 #X coords 0 -1 1 1 430 320 2 100 100;
