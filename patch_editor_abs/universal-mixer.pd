@@ -1,4 +1,4 @@
-#N canvas -1 25 1410 728 10;
+#N canvas 0 25 1410 728 10;
 #X declare -lib moonlib;
 #X obj 764 366 r \$0-channel1-volume-s;
 #X obj 796 385 r \$0-channel1-pan-s;
@@ -8,7 +8,7 @@
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -24,7 +24,7 @@
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -275,20 +275,20 @@ A<-->B -2 26 0 8 -1 -262144 -1 0 1;
 #X connect 5 0 1 0;
 #X restore 898 489 pd rs2;
 #X obj 804 468 r \$0-switch11-s;
-#X obj 178 267 vradio 15 1 0 3 empty empty PRE-OFF-POST -8 -8 0 6 -262144
--1 -1 0;
+#X obj 178 267 vradio 15 1 0 3 \$0-switch11-s \$0-switch11-r PRE-OFF-POST
+-8 -8 0 6 -262144 -1 -1 0;
 #X obj 271 197 moonlib/mknob 20 90 0 127 0 0 \$0-channel2-panAB-s \$0-channel2-panAB-r
 A<-->B -2 26 0 8 -1 -262144 -1 0 1;
 #X obj 363 196 moonlib/mknob 20 90 0 127 0 0 \$0-channel3-panAB-s \$0-channel3-panAB-r
 A<-->B -2 26 0 8 -1 -262144 -1 0 1;
 #X obj 460 195 moonlib/mknob 20 90 0 127 0 0 \$0-channel4-panAB-s \$0-channel4-panAB-r
 A<-->B -2 26 0 8 -1 -262144 -1 0 1;
-#X obj 270 267 vradio 15 1 0 3 empty empty PRE-OFF-POST -8 -8 0 6 -262144
--1 -1 0;
-#X obj 365 266 vradio 15 1 0 3 empty empty PRE-OFF-POST -8 -8 0 6 -262144
--1 -1 0;
-#X obj 460 265 vradio 15 1 0 3 empty empty PRE-OFF-POST -8 -8 0 6 -262144
--1 -1 0;
+#X obj 270 267 vradio 15 1 0 3 \$0-switch22-s \$0-switch22-r PRE-OFF-POST
+-8 -8 0 6 -262144 -1 -1 0;
+#X obj 365 266 vradio 15 1 0 3 \$0-switch33-s \$0-switch33-r PRE-OFF-POST
+-8 -8 0 6 -262144 -1 -1 0;
+#X obj 460 265 vradio 15 1 0 3 \$0-switch44-s \$0-switch44-r PRE-OFF-POST
+-8 -8 0 6 -262144 -1 -1 0;
 #X obj 270 344 moonlib/mknob 20 90 0 127 0 0 \$0-channel2-pan-s \$0-channel2-pan-r
 1<-->2 -5 26 0 8 -1 -262144 -1 0 1;
 #X obj 364 345 moonlib/mknob 20 90 0 127 0 0 \$0-channel3-pan-s \$0-channel3-pan-r
