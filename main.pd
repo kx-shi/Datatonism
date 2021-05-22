@@ -1,7 +1,7 @@
-#N canvas 87 178 1172 768 10;
+#N canvas 1366 56 1920 1024 10;
 #X declare -path patch_editor_abs;
 #X obj 13 701 declare -path patch_editor_abs;
-#N canvas 799 66 960 874 patch-editor-do-not-delete 0;
+#N canvas 403 56 960 676 patch-editor-do-not-delete 0;
 #X msg 26 128 \; pd dsp 0;
 #X obj 26 34 loadbang;
 #X obj 26 103 delay 1;
@@ -155,7 +155,7 @@ more elaborate pd-code for deeper control.;
 #X obj 204 151 r open-organelle-map!;
 #X msg 204 198 \; pd-organelle-map vis \$1;
 #X obj 203 272 r open-modules!;
-#N canvas 953 155 765 287 modules 0;
+#N canvas 2445 110 765 287 modules 1;
 #X obj 10 22 cnv 15 745 60 empty empty MODULES 315 30 0 30 -33289 -4034
 0;
 #X obj 10 90 cnv 15 240 20 empty empty SOURCE_MODULES: 10 10 0 15 -33289
@@ -318,7 +318,7 @@ for more details.;
 #X restore 382 498 pd license;
 #X obj 380 521 r open-license!;
 #X msg 380 574 \; pd-license vis \$1;
-#N canvas 293 23 419 217 reset-warning 0;
+#N canvas 293 56 419 217 reset-warning 0;
 #X obj 21 143 bng 15 250 50 0 \$0-reset! empty <--RESET! 17 7 0 10
 -262144 -1 -1;
 #X text 18 49 WARNING!;
@@ -450,8 +450,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X connect 7 0 0 0;
 #X connect 8 0 7 0;
 #X restore 190 187 pd CPU-load;
-#N canvas 1102 255 407 359 source-modules 0;
-#N canvas 626 141 745 603 open-quad-input-amplifier 0;
+#N canvas 956 255 407 359 source-modules 0;
+#N canvas 618 129 745 603 open-quad-input-amplifier 0;
 #X msg 64 84 bang;
 #X obj 64 151 t b b b;
 #X obj 162 168 f;
@@ -464,8 +464,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 38 r \$0-reset!;
 #X msg 177 60 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 33 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 33 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -520,8 +520,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 38 r \$0-reset!;
 #X msg 177 60 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 6 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 7 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -574,8 +574,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 38 r \$0-reset!;
 #X msg 177 60 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 3 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 4 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -636,8 +636,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 14 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 14 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -690,8 +690,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 5 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 5 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -744,8 +744,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 5 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 6 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -798,8 +798,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 3 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 3 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -852,8 +852,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 3 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 3 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -911,8 +911,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 6 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 7 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -965,8 +965,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 2 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 3 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -1019,8 +1019,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 3 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 4 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -1073,8 +1073,8 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 83 316 pack s f;
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
-#X obj 162 280 nbx 5 14 -1e+037 1e+037 0 1 empty empty empty 0 -8 0
-10 -262144 -1 -1 2 256;
+#X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 2 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -1131,13 +1131,13 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 2 1 cnv 10 150 25 empty empty DATATONISM 15 13 0 20 -1 -4034
 0;
 #X obj 8 38 bng 20 250 50 0 open-quick-guide! empty <--ABOUT 25 10
-0 15 -4034 -1 -1;
+0 15 -4034 -13381 -1;
 #X obj 8 69 bng 20 250 50 0 open-manual! empty <--MANUAL 25 10 0 15
--4034 -1 -1;
+-4034 -13381 -1;
 #X obj 8 100 bng 20 250 50 0 open-modules! empty <--MODULES(esc) 25
-10 0 15 -4034 -1 -1;
+10 0 15 -4034 -13381 -1;
 #X obj 8 132 bng 20 250 50 0 SAVE-S SAVE-R <--SAVE!(enter) 25 10 0
-15 -4034 -4034 -1;
+15 -4034 -13381 -1;
 #X floatatom 8 236 5 0 0 1 CPU% CPU -;
 #X obj 8 165 bng 20 250 50 0 open-reset-warning! empty <--RESET! 25
-10 0 15 -4034 -1 -1;
+10 0 15 -4034 -13381 -1;
