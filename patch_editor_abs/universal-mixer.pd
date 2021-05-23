@@ -112,13 +112,13 @@
 #X obj 1376 108 r \$0-switch4-s;
 #X obj 101 103 cnv 15 428 314 empty empty Universal-Mixer_3205 20 35
 0 14 -233017 -66577 0;
-#X text 113 189 -- -- 0, f 9;
-#X text 111 214 -- -- -10;
-#X text 112 262 -- -- -30;
-#X text 112 291 -- -- -40;
-#X text 112 313 -- -- ∞, f 9;
-#X text 111 238 -- -- -20;
-#X obj 122 196 vsl 15 127 0 127 0 0 \$0-channel1-fader-s \$0-channel1-fader-r
+#X text 114 189 -- -- 0, f 9;
+#X text 112 214 -- -- -10;
+#X text 113 262 -- -- -30;
+#X text 113 291 -- -- -40;
+#X text 113 313 -- -- ∞, f 9;
+#X text 112 238 -- -- -20;
+#X obj 123 196 vsl 15 127 0 127 0 0 \$0-channel1-fader-s \$0-channel1-fader-r
 empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X text 301 189 -- -- 0, f 9;
 #X text 301 213 -- -- -10;
@@ -128,13 +128,13 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X text 301 237 -- -- -20;
 #X obj 177 344 moonlib/mknob 20 90 0 127 0 0 \$0-channel1-pan12-s \$0-channel1-pan12-r
 1<-->2 -5 26 0 8 -1 -262144 -1 0 1;
-#X obj 178 173 hradio 12 1 0 2 \$0-switch1-s \$0-switch1-r 1_A 0 -8
+#X obj 131 174 hradio 12 1 0 2 \$0-switch1-s \$0-switch1-r 1_A 0 -8
 0 10 -262144 -1 -1 0;
-#X obj 274 173 hradio 12 1 0 2 \$0-switch2-s \$0-switch2-r 2_B 0 -8
+#X obj 227 174 hradio 12 1 0 2 \$0-switch2-s \$0-switch2-r 2_B 0 -8
 0 10 -262144 -1 -1 0;
-#X obj 364 173 hradio 12 1 0 2 \$0-switch3-s \$0-switch3-r 3_A 0 -8
+#X obj 317 174 hradio 12 1 0 2 \$0-switch3-s \$0-switch3-r 3_A 0 -8
 0 10 -262144 -1 -1 2;
-#X obj 459 172 hradio 12 1 0 2 \$0-switch4-s \$0-switch4-s 4_B 0 -8
+#X obj 412 173 hradio 12 1 0 2 \$0-switch4-s \$0-switch4-s 4_B 0 -8
 0 10 -262144 -1 -1 2;
 #X obj 195 330 cnv 15 1 1 empty empty CH2 20 12 0 14 -233017 -66577
 0;
@@ -156,7 +156,7 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X text 347 104 Ch2;
 #X text 424 103 Ch3;
 #X text 495 103 Ch4;
-#X obj 99 331 cnv 15 1 1 empty empty CH1 20 12 0 14 -233017 -66577
+#X obj 102 331 cnv 15 1 1 empty empty CH1 20 12 0 14 -233017 -66577
 0;
 #X obj 1300 41 inlet~ Ch4;
 #X obj 1142 654 outlet~ Ch1;
@@ -179,13 +179,13 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X connect 3 0 2 0;
 #X connect 5 0 1 0;
 #X restore 878 144 pd rs1;
-#X text 208 189 -- -- 0, f 9;
-#X text 206 214 -- -- -10;
-#X text 207 262 -- -- -30;
-#X text 207 291 -- -- -40;
-#X text 207 313 -- -- ∞, f 9;
-#X text 206 238 -- -- -20;
-#X obj 219 195 vsl 15 128 0 127 0 0 \$0-channel2-fader-s \$0-channel2-fader-r
+#X text 209 189 -- -- 0, f 9;
+#X text 207 214 -- -- -10;
+#X text 208 262 -- -- -30;
+#X text 208 291 -- -- -40;
+#X text 208 313 -- -- ∞, f 9;
+#X text 207 238 -- -- -20;
+#X obj 218 195 vsl 15 128 0 127 0 0 \$0-channel2-fader-s \$0-channel2-fader-r
 empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X text 398 190 -- -- 0, f 9;
 #X text 396 215 -- -- -10;
@@ -198,7 +198,7 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X obj 100 445 declare -lib moonlib;
 #X obj 178 199 moonlib/mknob 20 90 0 127 0 0 \$0-channel1-panAB-s \$0-channel1-panAB-r
 A<-->B -2 26 0 8 -1 -262144 -1 0 1;
-#X obj 179 288 vradio 15 1 0 3 \$0-switch-preoffpost1-s \$0-switch-preoffpost1-r
+#X obj 178 288 vradio 15 1 0 3 \$0-switch-preoffpost1-s \$0-switch-preoffpost1-r
 PRE-OFF-POST -8 -8 0 6 -262144 -1 -1 0;
 #X obj 272 197 moonlib/mknob 20 90 0 127 0 0 \$0-channel2-panAB-s \$0-channel2-panAB-r
 A<-->B -2 26 0 8 -1 -262144 -1 0 1;
@@ -250,9 +250,9 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #X obj 1353 316 r \$0-channel2-fader-s;
 #X obj 1491 315 r \$0-channel3-fader-s;
 #X obj 1626 315 r \$0-channel4-fader-s;
-#X obj 505 168 vradio 15 1 0 2 \$0-switchA-s \$0-switchA-r XEA_OFF
+#X obj 503 171 vradio 15 1 0 2 \$0-switchA-s \$0-switchA-r XEA_OFF
 -10 -8 0 8 -262144 -1 -1 0;
-#X obj 505 314 vradio 15 1 0 2 \$0-switchB-s \$0-switchB-s XEB_OFF
+#X obj 503 317 vradio 15 1 0 2 \$0-switchB-s \$0-switchB-s XEB_OFF
 -10 -8 0 8 -262144 -1 -1 0;
 #X text 352 399 Ch1;
 #X text 404 399 Ch2;
@@ -262,9 +262,9 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #X obj 678 655 outlet~ XEA;
 #X obj 1002 655 outlet~ XEB;
 #X text 200 192 X;
-#X text 294 193 X;
+#X text 293 192 X;
 #X text 390 192 X;
-#X text 483 190 X;
+#X text 483 191 X;
 #X text 379 333 Y;
 #X text 288 333 Y;
 #X text 197 332 Y;
