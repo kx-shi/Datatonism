@@ -1,7 +1,7 @@
-#N struct 1032-rectangle float x float c;
-#N struct 1032-pixel float x0 float y0 float x1 float y1;
-#N struct 1033-rectangle float x float c;
-#N struct 1033-pixel float x0 float y0 float x1 float y1;
+#N struct 1084-rectangle float x float c;
+#N struct 1084-pixel float x0 float y0 float x1 float y1;
+#N struct 1085-rectangle float x float c;
+#N struct 1085-pixel float x0 float y0 float x1 float y1;
 #N canvas 1366 56 1920 1024 10;
 #X declare -lib moonlib;
 #X declare -path ../other_patches;
@@ -238,6 +238,8 @@
 #X floatatom 987 684 5 0 0 0 - - -;
 #X floatatom 1022 684 5 0 0 0 - - -;
 #X text 916 702 for debugging purposes;
+#X obj 336 138 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 15 -228856
+-66577 0;
 #X connect 1 0 27 0;
 #X connect 2 0 28 0;
 #X connect 3 0 46 0;
