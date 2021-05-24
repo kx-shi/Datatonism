@@ -1,4 +1,4 @@
-#N canvas 1366 56 1920 1024 10;
+#N canvas 0 25 1440 847 10;
 #X declare -path patch_editor_abs;
 #X declare -lib moonlib;
 #X declare -path other_patches;
@@ -157,7 +157,7 @@ more elaborate pd-code for deeper control.;
 #X obj 204 151 r open-organelle-map!;
 #X msg 204 198 \; pd-organelle-map vis \$1;
 #X obj 203 272 r open-modules!;
-#N canvas 2445 110 765 287 modules 0;
+#N canvas 675 110 765 287 modules 0;
 #X obj 10 22 cnv 15 745 60 empty empty MODULES 315 30 0 30 -33289 -4034
 0;
 #X obj 10 90 cnv 15 240 20 empty empty SOURCE_MODULES: 10 10 0 15 -33289
@@ -467,7 +467,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 38 r \$0-reset!;
 #X msg 177 60 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -523,7 +523,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 38 r \$0-reset!;
 #X msg 177 60 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 2 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -577,7 +577,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 38 r \$0-reset!;
 #X msg 177 60 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -639,7 +639,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -693,7 +693,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -747,7 +747,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -801,7 +801,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 2 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -855,7 +855,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -914,7 +914,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -968,7 +968,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 2 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -1022,7 +1022,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 2 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -1076,7 +1076,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 2 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -1145,4 +1145,3 @@ and send to the name of the module \, for example [s basic-osc];
 10 0 15 -4034 -13381 -1;
 #X obj 13 705 declare -lib moonlib;
 #X obj 13 751 declare -path other_patches;
-#X obj 820 45 quad-envelope-shaper 1;

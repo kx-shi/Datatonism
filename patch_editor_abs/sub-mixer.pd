@@ -1,78 +1,92 @@
-#N canvas 179 99 1261 713 10;
-#X obj 292 261 cnv 5 5 5 empty empty SUB-MIXER 0 0 0 10 -262144 -66577
-0;
-#X obj 331 110 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#N canvas 87 74 1261 713 10;
+#X declare -lib moonlib;
+#X obj 530 109 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
 -66577 0;
-#X obj 314 626 outlet~;
-#X obj 112 250 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
+#X obj 301 103 cnv 15 428 314 empty empty SUB_MIXER_3202 10 35 0 15
+-228856 -66577 0;
+#X text 314 105 A;
+#X text 381 105 B;
+#X text 466 104 1;
+#X text 549 104 2;
+#X text 634 104 3;
+#X text 707 104 4;
+#X obj 1095 639 outlet~;
+#X obj 461 342 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
 -6 0 8 -262144 -1 -1 0 1;
-#X obj 143 250 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
+#X obj 545 342 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
 -6 0 8 -262144 -1 -1 0 1;
-#X obj 172 250 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
+#X obj 634 342 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
 -6 0 8 -262144 -1 -1 0 1;
-#X obj 118 110 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 463 188 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 149 110 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 550 188 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 178 110 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 636 188 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 207 110 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 705 188 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 271 110 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 311 189 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 298 110 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 201 250 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
+#X obj 700 342 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
 -6 0 8 -262144 -1 -1 0 1;
-#X obj 384 626 outlet~;
-#X obj 314 603 *~;
-#X obj 327 487 / 127;
-#X obj 328 565 line~;
-#X obj 328 541 pack 0 50;
-#X obj 385 601 *~;
-#X obj 398 485 / 127;
-#X obj 399 563 line~;
-#X obj 399 539 pack 0 50;
-#X obj 111 367 ../other_patches/volumeandpan~, f 11;
-#X obj 190 367 ../other_patches/volumeandpan~, f 11;
-#X obj 267 367 ../other_patches/volumeandpan~, f 11;
-#X obj 346 367 ../other_patches/volumeandpan~, f 11;
-#X obj 111 337 inlet~;
-#X obj 188 336 inlet~;
-#X obj 266 337 inlet~;
-#X obj 346 334 inlet~;
-#X obj 4 338 inlet~;
-#X obj 55 338 inlet~;
-#X connect 3 0 22 2;
-#X connect 4 0 23 2;
-#X connect 5 0 24 2;
-#X connect 6 0 22 1;
-#X connect 7 0 23 1;
-#X connect 8 0 24 1;
-#X connect 9 0 25 1;
-#X connect 10 0 15 0;
-#X connect 11 0 19 0;
-#X connect 12 0 25 2;
-#X connect 14 0 2 0;
-#X connect 15 0 17 0;
-#X connect 16 0 14 1;
-#X connect 17 0 16 0;
-#X connect 18 0 13 0;
-#X connect 19 0 21 0;
-#X connect 20 0 18 1;
-#X connect 21 0 20 0;
-#X connect 22 0 14 0;
-#X connect 22 1 18 0;
-#X connect 23 0 14 0;
-#X connect 23 1 18 0;
-#X connect 24 0 14 0;
-#X connect 24 1 18 0;
-#X connect 25 0 14 0;
-#X connect 25 1 18 0;
-#X connect 26 0 22 0;
-#X connect 27 0 23 0;
-#X connect 28 0 24 0;
-#X connect 29 0 25 0;
-#X connect 30 0 14 0;
-#X connect 31 0 18 0;
-#X coords 0 -1 1 1 250 185 2 100 100;
+#X obj 1165 639 outlet~;
+#X obj 1095 616 *~;
+#X obj 1108 500 / 127;
+#X obj 1109 578 line~;
+#X obj 1109 554 pack 0 50;
+#X obj 1166 614 *~;
+#X obj 1179 498 / 127;
+#X obj 1180 576 line~;
+#X obj 1180 552 pack 0 50;
+#X obj 892 380 ../other_patches/volumeandpan~, f 11;
+#X obj 971 380 ../other_patches/volumeandpan~, f 11;
+#X obj 1048 380 ../other_patches/volumeandpan~, f 11;
+#X obj 1127 380 ../other_patches/volumeandpan~, f 11;
+#X obj 892 350 inlet~;
+#X obj 969 349 inlet~;
+#X obj 1047 350 inlet~;
+#X obj 1127 347 inlet~;
+#X obj 785 351 inlet~;
+#X obj 836 351 inlet~;
+#X obj 380 189 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X text 312 397 A;
+#X text 710 396 B;
+#X text 456 369 A← →B;
+#X text 540 370 A← →B;
+#X text 630 370 A← →B;
+#X text 695 370 A← →B;
+#X obj 34 652 declare -lib moonlib;
+#X connect 9 0 27 2;
+#X connect 10 0 28 2;
+#X connect 11 0 29 2;
+#X connect 12 0 27 1;
+#X connect 13 0 28 1;
+#X connect 14 0 29 1;
+#X connect 15 0 30 1;
+#X connect 16 0 20 0;
+#X connect 17 0 30 2;
+#X connect 19 0 8 0;
+#X connect 20 0 22 0;
+#X connect 21 0 19 1;
+#X connect 22 0 21 0;
+#X connect 23 0 18 0;
+#X connect 24 0 26 0;
+#X connect 25 0 23 1;
+#X connect 26 0 25 0;
+#X connect 27 0 19 0;
+#X connect 27 1 23 0;
+#X connect 28 0 19 0;
+#X connect 28 1 23 0;
+#X connect 29 0 19 0;
+#X connect 29 1 23 0;
+#X connect 30 0 19 0;
+#X connect 30 1 23 0;
+#X connect 31 0 27 0;
+#X connect 32 0 28 0;
+#X connect 33 0 29 0;
+#X connect 34 0 30 0;
+#X connect 35 0 19 0;
+#X connect 36 0 23 0;
+#X connect 37 0 24 0;
+#X coords 0 -1 1 1 430 320 1 300 100;

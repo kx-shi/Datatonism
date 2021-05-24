@@ -1,53 +1,59 @@
-#N canvas 473 54 911 729 10;
-#X obj 114 112 cnv 5 10 10 empty empty RINGMODULATOR 0 0 0 10 -262144
--66577 0;
+#N canvas 155 95 911 729 10;
+#X declare -lib moonlib;
 #X obj 331 109 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
 -66577 0;
-#X obj 330 487 *~;
-#X obj 446 437 inlet~;
-#X obj 298 437 inlet~;
-#X obj 297 600 outlet~;
-#X obj 447 599 outlet~;
-#X obj 330 532 *~, f 6;
-#X obj 299 532 *~;
-#X obj 445 530 *~;
-#X obj 182 383 / 127;
-#X obj 363 382 / 127;
-#X obj 534 382 / 127;
-#X text 300 135 A;
-#X text 294 181 AB;
-#X text 298 233 B;
-#X obj 535 460 line~;
-#X obj 535 436 pack 0 50;
-#X obj 362 461 line~;
-#X obj 362 437 pack 0 50;
-#X obj 184 460 line~;
-#X obj 184 436 pack 0 50;
-#X obj 314 128 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
+#X obj 301 103 cnv 15 428 314 empty empty RINGMODULATOR_3105 10 35
+0 15 -228856 -66577 0;
+#X text 302 105 A;
+#X text 713 106 B;
+#X obj 350 554 *~;
+#X obj 466 504 inlet~;
+#X obj 318 504 inlet~;
+#X obj 317 667 outlet~;
+#X obj 467 666 outlet~;
+#X obj 350 599 *~, f 6;
+#X obj 319 599 *~;
+#X obj 465 597 *~;
+#X obj 202 450 / 127;
+#X obj 383 449 / 127;
+#X obj 554 449 / 127;
+#X text 668 152 A;
+#X text 664 254 AB;
+#X text 669 364 B;
+#X obj 555 527 line~;
+#X obj 555 503 pack 0 50;
+#X obj 382 528 line~;
+#X obj 382 504 pack 0 50;
+#X obj 204 527 line~;
+#X obj 204 503 pack 0 50;
+#X obj 682 145 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
 -6 0 8 -262144 -1 -1 0 1;
-#X obj 313 176 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
+#X obj 683 249 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
 -6 0 8 -262144 -1 -1 0 1;
-#X obj 313 223 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
+#X obj 684 354 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
 -6 0 8 -262144 -1 -1 0 1;
-#X connect 2 0 7 0;
-#X connect 3 0 2 1;
-#X connect 3 0 9 0;
-#X connect 4 0 2 0;
-#X connect 4 0 8 0;
-#X connect 7 0 5 0;
-#X connect 7 0 6 0;
-#X connect 8 0 5 0;
-#X connect 9 0 6 0;
-#X connect 10 0 21 0;
-#X connect 11 0 19 0;
-#X connect 12 0 17 0;
-#X connect 16 0 9 1;
-#X connect 17 0 16 0;
-#X connect 18 0 7 1;
+#X text 303 399 A;
+#X text 714 400 B;
+#X obj 30 685 declare -lib moonlib;
+#X connect 4 0 9 0;
+#X connect 5 0 4 1;
+#X connect 5 0 11 0;
+#X connect 6 0 4 0;
+#X connect 6 0 10 0;
+#X connect 9 0 7 0;
+#X connect 9 0 8 0;
+#X connect 10 0 7 0;
+#X connect 11 0 8 0;
+#X connect 12 0 23 0;
+#X connect 13 0 21 0;
+#X connect 14 0 19 0;
+#X connect 18 0 11 1;
 #X connect 19 0 18 0;
-#X connect 20 0 8 1;
+#X connect 20 0 9 1;
 #X connect 21 0 20 0;
-#X connect 22 0 10 0;
-#X connect 23 0 11 0;
+#X connect 22 0 10 1;
+#X connect 23 0 22 0;
 #X connect 24 0 12 0;
-#X coords 0 -1 1 1 250 185 2 100 100;
+#X connect 25 0 13 0;
+#X connect 26 0 14 0;
+#X coords 0 -1 1 1 430 320 2 300 100;
