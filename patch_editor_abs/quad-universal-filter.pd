@@ -10,7 +10,7 @@
 #X obj 301 103 cnv 15 428 314 empty empty QUAD-UNIVERSAL-FILTER_3103
 10 35 0 15 -228856 -66577 0;
 #X obj 445 172 mknob 22 100 0 127 0 1 \$0-quf-type-1-s \$0-quf-type-1-r
-M -12 20 0 12 -1 -262144 -1 3100 1;
+M -12 20 0 12 -1 -262144 -1 3200 1;
 #X obj 506 468 declare -lib moonlib;
 #X text 314 105 A;
 #X text 381 105 B;
