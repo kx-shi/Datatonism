@@ -2,12 +2,12 @@
 #X declare moonlib;
 #X obj 51 103 cnv 15 428 314 empty empty QUAD-SOUND-GENERATOR_3002
 10 35 0 14 -233017 -66577 0;
-#X obj 128 319 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s1 \$0-sound-gen-l-r1
-L -2 -6 0 8 -258113 -262144 -45076 0 1;
-#X obj 128 229 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s1
-\$0-sound-gen-freq-r1 F -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 127 274 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s1 \$0-sound-gen-w-r1
-W -2 -6 0 8 -1 -262144 -1 0 1;
+#X obj 128 322 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s1 \$0-sound-gen-l-r1
+L -12 12 0 12 -258113 -262144 -45076 0 1;
+#X obj 128 232 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s1
+\$0-sound-gen-freq-r1 F -12 12 0 12 -1 -262144 -1 0 1;
+#X obj 127 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s1 \$0-sound-gen-w-r1
+W -12 12 0 12 -1 -262144 -1 0 1;
 #X obj 93 24 inlet~ A;
 #X obj 162 25 inlet~ B;
 #X obj 232 26 inlet~ one;
@@ -40,23 +40,23 @@ W -2 -6 0 8 -1 -262144 -1 0 1;
 #X obj 1165 507 quad-sound-generator-router;
 #X obj 1250 303 r \$0-sound-gen-l-s1;
 #X obj 206 322 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s2 \$0-sound-gen-l-r2
-L -2 -6 0 8 -258113 -262144 -45076 0 1;
+L -12 12 0 12 -258113 -262144 -45076 0 1;
 #X obj 206 232 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s2
-\$0-sound-gen-freq-r2 F -2 -6 0 8 -1 -262144 -1 0 1;
+\$0-sound-gen-freq-r2 F -12 12 0 12 -1 -262144 -1 0 1;
 #X obj 205 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s2 \$0-sound-gen-w-r2
-W -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 301 323 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s3 \$0-sound-gen-l-r3
-L -2 -6 0 8 -258113 -262144 -45076 0 1;
-#X obj 301 233 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s3
-\$0-sound-gen-freq-r3 F -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 300 278 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s3 \$0-sound-gen-w-r3
-W -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 376 321 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s4 \$0-sound-gen-l-r4
-L -2 -6 0 8 -258113 -262144 -45076 0 1;
-#X obj 376 231 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s4
-\$0-sound-gen-freq-r4 F -2 -6 0 8 -1 -262144 -1 0 1;
-#X obj 375 276 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s4 \$0-sound-gen-w-r4
-W -2 -6 0 8 -1 -262144 -1 0 1;
+W -12 12 0 12 -1 -262144 -1 0 1;
+#X obj 301 322 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s3 \$0-sound-gen-l-r3
+L -12 12 0 12 -258113 -262144 -45076 0 1;
+#X obj 301 232 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s3
+\$0-sound-gen-freq-r3 F -12 12 0 12 -1 -262144 -1 0 1;
+#X obj 300 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s3 \$0-sound-gen-w-r3
+W -12 12 0 12 -1 -262144 -1 0 1;
+#X obj 379 322 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s4 \$0-sound-gen-l-r4
+L -12 12 0 12 -258113 -262144 -45076 0 1;
+#X obj 379 232 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s4
+\$0-sound-gen-freq-r4 F -12 12 0 12 -1 -262144 -1 0 1;
+#X obj 378 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s4 \$0-sound-gen-w-r4
+W -12 12 0 12 -1 -262144 -1 0 1;
 #X obj 1109 374 s~ \$0-channel-1;
 #X obj 1165 401 r~ \$0-channel-1;
 #X msg 1419 309 OFF;
@@ -71,11 +71,11 @@ W -2 -6 0 8 -1 -262144 -1 0 1;
 #X text 1108 87 Channel 1;
 #X obj 593 265 *~;
 #X obj 643 224 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5400 1;
+-1 -1 6000 1;
 #X obj 640 249 / 127;
 #X obj 593 305 dac~;
 #X obj 671 25 declare moonlib;
-#X obj 103 276 tgl 15 1 \$0-sound-gen-low-freq-s1 \$0-sound-gen-low-freq-r1
+#X obj 96 280 tgl 15 1 \$0-sound-gen-low-freq-s1 \$0-sound-gen-low-freq-r1
 empty 0 -7 0 10 -262144 -1 -1 0 1;
 #X obj 1144 153 r \$0-sound-gen-low-freq-s1;
 #X obj 232 47 s~ \$0-sound-gen-inlet1;
@@ -97,11 +97,11 @@ OFF_EXP_LIN_1_3_4 0 -8 0 10 -262144 -1 -1 0;
 OFF_EXP_LIN_1_2_4 0 -8 0 10 -262144 -1 -1 0;
 #X obj 376 178 hradio 15 1 1 6 \$0-sound-gen-mod-s4 \$0-sound-gen-mod-r4
 OFF_EXP_LIN_1_2_3 0 -8 0 10 -262144 -1 -1 0;
-#X obj 186 280 tgl 15 1 \$0-sound-gen-low-freq-s2 \$0-sound-gen-low-freq-r2
+#X obj 174 279 tgl 15 1 \$0-sound-gen-low-freq-s2 \$0-sound-gen-low-freq-r2
 empty 0 -7 0 10 -262144 -1 -1 0 1;
-#X obj 279 279 tgl 15 1 \$0-sound-gen-low-freq-s3 \$0-sound-gen-low-freq-r3
+#X obj 269 279 tgl 15 1 \$0-sound-gen-low-freq-s3 \$0-sound-gen-low-freq-r3
 empty 0 -7 0 10 -262144 -1 -1 0 1;
-#X obj 354 280 tgl 15 1 \$0-sound-gen-low-freq-s4 \$0-sound-gen-low-freq-r4
+#X obj 347 280 tgl 15 1 \$0-sound-gen-low-freq-s4 \$0-sound-gen-low-freq-r4
 empty 0 -7 0 10 -262144 -1 -1 0 1;
 #X obj 1421 637 *~ 127;
 #X obj 1421 663 mtof~;
