@@ -17,24 +17,24 @@
 #X obj 202 450 / 127;
 #X obj 383 449 / 127;
 #X obj 554 449 / 127;
-#X text 668 152 A;
-#X text 664 254 AB;
-#X text 669 364 B;
 #X obj 555 527 line~;
 #X obj 555 503 pack 0 50;
 #X obj 382 528 line~;
 #X obj 382 504 pack 0 50;
 #X obj 204 527 line~;
 #X obj 204 503 pack 0 50;
-#X obj 682 145 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
--6 0 8 -262144 -1 -1 0 1;
-#X obj 683 249 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
--6 0 8 -262144 -1 -1 0 1;
-#X obj 684 354 moonlib/mknob 25 100 0 127 0 0 empty empty empty -2
--6 0 8 -262144 -1 -1 0 1;
+#X obj 682 145 moonlib/mknob 25 100 0 127 0 0 \$0-gain-a-s \$0-gain-a-r
+A -12 12 0 12 -262144 -1 -1 0 1;
+#X obj 683 249 moonlib/mknob 25 100 0 127 0 0 \$0-gain-ab-s \$0-gain-ab-r
+AB -18 12 0 12 -262144 -1 -1 0 1;
+#X obj 684 354 moonlib/mknob 25 100 0 127 0 0 \$0-gain-b-s \$0-gain-b-r
+B -12 12 0 12 -262144 -1 -1 0 1;
 #X text 303 399 A;
 #X text 714 400 B;
 #X obj 30 685 declare -lib moonlib;
+#X obj 556 421 r \$0-gain-b-s;
+#X obj 203 418 r \$0-gain-a-s;
+#X obj 381 422 r \$0-gain-ab-s;
 #X connect 4 0 9 0;
 #X connect 5 0 4 1;
 #X connect 5 0 11 0;
@@ -44,16 +44,16 @@
 #X connect 9 0 8 0;
 #X connect 10 0 7 0;
 #X connect 11 0 8 0;
-#X connect 12 0 23 0;
-#X connect 13 0 21 0;
-#X connect 14 0 19 0;
-#X connect 18 0 11 1;
-#X connect 19 0 18 0;
-#X connect 20 0 9 1;
-#X connect 21 0 20 0;
-#X connect 22 0 10 1;
-#X connect 23 0 22 0;
-#X connect 24 0 12 0;
-#X connect 25 0 13 0;
-#X connect 26 0 14 0;
+#X connect 12 0 20 0;
+#X connect 13 0 18 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 1;
+#X connect 16 0 15 0;
+#X connect 17 0 9 1;
+#X connect 18 0 17 0;
+#X connect 19 0 10 1;
+#X connect 20 0 19 0;
+#X connect 27 0 14 0;
+#X connect 28 0 12 0;
+#X connect 29 0 13 0;
 #X coords 0 -1 1 1 430 320 2 300 100;
