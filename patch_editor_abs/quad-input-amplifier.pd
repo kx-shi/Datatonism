@@ -176,19 +176,19 @@
 0 14 -233017 -66577 0;
 #X obj 499 132 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
 -66577 0;
-#X obj 138 328 mknob 25 100 0 127 0 0 \$0_level_1_s \$0_level_1_r Gain
+#X obj 138 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_1_s \$0_level_1_r Gain
 -2 -6 0 12 -258113 -1 -1 1700 1;
 #X floatatom 138 356 5 0 0 0 - - -;
 #X text 174 355 db;
-#X obj 240 328 mknob 25 100 0 127 0 0 \$0_level_2_s \$0_level_2_r Gain
+#X obj 240 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_2_s \$0_level_2_r Gain
 -2 -6 0 12 -258113 -1 -1 1700 1;
 #X floatatom 241 356 5 0 0 0 - - -;
 #X text 277 357 db;
-#X obj 338 329 mknob 25 100 0 127 0 0 \$0_level_3_s \$0_level_3_r Gain
+#X obj 338 329 moonlib/mknob 25 100 0 127 0 0 \$0_level_3_s \$0_level_3_r Gain
 -2 -6 0 12 -258113 -1 -1 600 1;
 #X floatatom 339 357 5 0 0 0 - - -;
 #X text 375 358 db;
-#X obj 445 328 mknob 25 100 0 127 0 0 \$0_level_4_s \$0_level_4_r Gain
+#X obj 445 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_4_s \$0_level_4_r Gain
 -2 -6 0 12 -258113 -1 -1 0 1;
 #X floatatom 446 357 5 0 0 0 - - -;
 #X text 482 358 db;

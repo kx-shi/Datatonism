@@ -15,16 +15,16 @@
 #X text 436 101 3;
 #X text 517 101 4;
 #X obj 1937 1021 outlet~ one;
-#X obj 193 153 mknob 22 100 0.1 10 0 1 \$0-adsr-attack-1-s \$0-adsr-attack-1-r
+#X obj 193 153 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-attack-1-s \$0-adsr-attack-1-r
 A -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 193 176 5 0 0 0 - - -;
-#X obj 193 196 mknob 22 100 0.1 10 0 1 \$0-adsr-hold-1-s \$0-adsr-hold-1-r
+#X obj 193 196 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-hold-1-s \$0-adsr-hold-1-r
 S -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 193 219 5 0 0 0 - - -;
-#X obj 193 239 mknob 22 100 0.1 10 0 1 \$0-adsr-release-1-s \$0-adsr-release-1-r
+#X obj 193 239 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-release-1-s \$0-adsr-release-1-r
 R -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 193 262 5 0 0 0 - - -;
-#X obj 193 282 mknob 22 100 0.1 10 0 1 \$0-adsr-time-1-s \$0-adsr-time-1-r
+#X obj 193 282 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-time-1-s \$0-adsr-time-1-r
 time -22 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 193 305 5 0 0 0 - - -;
 #X text 116 400 A;
@@ -34,52 +34,52 @@ time -22 10 0 8 -1 -262144 -1 0 1;
 #X text 437 399 3;
 #X text 517 399 4;
 #X text 404 82 Knob size: 22;
-#X obj 193 346 mknob 22 100 0 1 0 1 \$0-adsr-level-1-s \$0-adsr-level-1-r
+#X obj 193 346 moonlib/mknob 22 100 0 1 0 1 \$0-adsr-level-1-s \$0-adsr-level-1-r
 OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 0 1;
 #X floatatom 193 369 5 0 0 0 - - -;
-#X obj 279 153 mknob 22 100 0.1 10 0 1 \$0-adsr-attack-2-s \$0-adsr-attack-2-r
+#X obj 279 153 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-attack-2-s \$0-adsr-attack-2-r
 A -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 279 176 5 0 0 0 - - -;
-#X obj 279 196 mknob 22 100 0.1 10 0 1 \$0-adsr-hold-2-s \$0-adsr-hold-2-r
+#X obj 279 196 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-hold-2-s \$0-adsr-hold-2-r
 S -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 279 219 5 0 0 0 - - -;
-#X obj 279 239 mknob 22 100 0.1 10 0 1 \$0-adsr-release-2-s \$0-adsr-release-2-r
+#X obj 279 239 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-release-2-s \$0-adsr-release-2-r
 R -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 279 262 5 0 0 0 - - -;
-#X obj 279 282 mknob 22 100 0.1 10 0 1 \$0-adsr-time-2-s \$0-adsr-time-2-r
+#X obj 279 282 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-time-2-s \$0-adsr-time-2-r
 time -22 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 279 305 5 0 0 0 - - -;
-#X obj 279 346 mknob 22 100 0 1 0 1 \$0-adsr-level-2-s \$0-adsr-level-2-r
+#X obj 279 346 moonlib/mknob 22 100 0 1 0 1 \$0-adsr-level-2-s \$0-adsr-level-2-r
 OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 0 1;
 #X floatatom 279 369 5 0 0 0 - - -;
-#X obj 368 153 mknob 22 100 0.1 10 0 1 \$0-adsr-attack-3-s \$0-adsr-attack-3-r
+#X obj 368 153 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-attack-3-s \$0-adsr-attack-3-r
 A -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 368 176 5 0 0 0 - - -;
-#X obj 368 196 mknob 22 100 0.1 10 0 1 \$0-adsr-hold-3-s \$0-adsr-hold-3-r
+#X obj 368 196 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-hold-3-s \$0-adsr-hold-3-r
 S -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 368 219 5 0 0 0 - - -;
-#X obj 368 239 mknob 22 100 0.1 10 0 1 \$0-adsr-release-3-s \$0-adsr-release-3-r
+#X obj 368 239 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-release-3-s \$0-adsr-release-3-r
 R -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 368 262 5 0 0 0 - - -;
-#X obj 368 282 mknob 22 100 0.1 10 0 1 \$0-adsr-time-3-s \$0-adsr-time-3-r
+#X obj 368 282 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-time-3-s \$0-adsr-time-3-r
 time -22 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 368 305 5 0 0 0 - - -;
-#X obj 368 346 mknob 22 100 0 1 0 1 \$0-adsr-level-3-s \$0-adsr-level-3-r
+#X obj 368 346 moonlib/mknob 22 100 0 1 0 1 \$0-adsr-level-3-s \$0-adsr-level-3-r
 OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 0 1;
 #X floatatom 368 369 5 0 0 0 - - -;
-#X obj 457 153 mknob 22 100 0.1 10 0 1 \$0-adsr-attack-4-s \$0-adsr-attack-4-r
+#X obj 457 153 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-attack-4-s \$0-adsr-attack-4-r
 A -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 457 176 5 0 0 0 - - -;
-#X obj 457 196 mknob 22 100 0.1 10 0 1 \$0-adsr-hold-4-s \$0-adsr-hold-4-r
+#X obj 457 196 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-hold-4-s \$0-adsr-hold-4-r
 S -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 457 219 5 0 0 0 - - -;
-#X obj 457 239 mknob 22 100 0.1 10 0 1 \$0-adsr-release-4-s \$0-adsr-release-4-r
+#X obj 457 239 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-release-4-s \$0-adsr-release-4-r
 R -8 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 457 262 5 0 0 0 - - -;
-#X obj 457 282 mknob 22 100 0.1 10 0 1 \$0-adsr-time-4-s \$0-adsr-time-4-r
+#X obj 457 282 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-time-4-s \$0-adsr-time-4-r
 time -22 10 0 8 -1 -262144 -1 0 1;
 #X floatatom 457 305 5 0 0 0 - - -;
-#X obj 457 346 mknob 22 100 0 1 0 1 \$0-adsr-level-4-s \$0-adsr-level-4-r
+#X obj 457 346 moonlib/mknob 22 100 0 1 0 1 \$0-adsr-level-4-s \$0-adsr-level-4-r
 OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 0 1;
 #X floatatom 457 369 5 0 0 0 - - -;
 #X obj 1953 747 vline~;

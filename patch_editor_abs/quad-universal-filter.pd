@@ -9,7 +9,7 @@
 #X msg 523 40 \; pd dsp 0;
 #X obj 301 103 cnv 15 428 314 empty empty QUAD-UNIVERSAL-FILTER_3103
 10 35 0 15 -228856 -66577 0;
-#X obj 445 172 mknob 22 100 0 127 0 1 \$0-quf-type-1-s \$0-quf-type-1-r
+#X obj 445 172 moonlib/mknob 22 100 0 127 0 1 \$0-quf-type-1-s \$0-quf-type-1-r
 M -12 20 0 12 -1 -262144 -1 3100 1;
 #X obj 506 468 declare -lib moonlib;
 #X text 314 105 A;
@@ -508,13 +508,13 @@ B 0 -12 0 15 -262144 -1 -1 2;
 #X text 345 235 1 \, 2;
 #X text 345 316 3 \, 4;
 #X obj 810 429 r \$0-quf-type-1-s;
-#X obj 445 219 mknob 22 100 1 127 1 1 \$0-quf-q-1-s \$0-quf-q-1-r Q
+#X obj 445 219 moonlib/mknob 22 100 1 127 1 1 \$0-quf-q-1-s \$0-quf-q-1-r Q
 -12 20 0 12 -1 -262144 -1 5000 1;
-#X obj 445 261 mknob 22 100 0 127 0 1 \$0-quf-freq-1-s \$0-quf-freq-1-r
+#X obj 445 261 moonlib/mknob 22 100 0 127 0 1 \$0-quf-freq-1-s \$0-quf-freq-1-r
 F -12 20 0 12 -1 -262144 -1 0 1;
-#X obj 446 304 mknob 22 100 0 127 0 1 \$0-quf-deltaF-1-s \$0-quf-deltaF-1-r
+#X obj 446 304 moonlib/mknob 22 100 0 127 0 1 \$0-quf-deltaF-1-s \$0-quf-deltaF-1-r
 DF -16 20 0 12 -1 -262144 -1 5000 1;
-#X obj 446 350 mknob 22 100 0 127 0 1 \$0-quf-bypass-1-s \$0-quf-bypass-1-r
+#X obj 446 350 moonlib/mknob 22 100 0 127 0 1 \$0-quf-bypass-1-s \$0-quf-bypass-1-r
 Off-Lev -44 20 0 10 -258113 -262144 -1 9900 1;
 #X obj 1045 148 r \$0-quf-q-1-s;
 #X obj 930 276 r \$0-quf-freq-1-s;
@@ -581,41 +581,41 @@ Off-Lev -44 20 0 10 -258113 -262144 -1 9900 1;
 #X text 21 829 The Off-Lev knob governs the amount of raw unfiltered
 signal going through to the output. One exception is the Osc-mode where
 the knob act as volume., f 47;
-#X obj 528 172 mknob 22 100 0 127 0 1 \$0-quf-type-2-s \$0-quf-type-2-r
+#X obj 528 172 moonlib/mknob 22 100 0 127 0 1 \$0-quf-type-2-s \$0-quf-type-2-r
 M -12 20 0 12 -1 -262144 -1 3000 1;
 #X floatatom 528 195 5 0 0 0 - #0-quf-typeNo-2-r #0-quf-typeNo-2-s
 ;
-#X obj 528 219 mknob 22 100 1 127 1 1 \$0-quf-q-2-s \$0-quf-q-2-r Q
+#X obj 528 219 moonlib/mknob 22 100 1 127 1 1 \$0-quf-q-2-s \$0-quf-q-2-r Q
 -12 20 0 12 -1 -262144 -1 5100 1;
-#X obj 528 261 mknob 22 100 0 127 0 1 \$0-quf-freq-2-s \$0-quf-freq-2-r
+#X obj 528 261 moonlib/mknob 22 100 0 127 0 1 \$0-quf-freq-2-s \$0-quf-freq-2-r
 F -12 20 0 12 -1 -262144 -1 0 1;
-#X obj 529 304 mknob 22 100 0 127 0 1 \$0-quf-deltaF-2-s \$0-quf-deltaF-2-r
+#X obj 529 304 moonlib/mknob 22 100 0 127 0 1 \$0-quf-deltaF-2-s \$0-quf-deltaF-2-r
 DF -16 20 0 12 -1 -262144 -1 5000 1;
-#X obj 529 350 mknob 22 100 0 127 0 1 \$0-quf-bypass-2-s \$0-quf-bypass-2-r
+#X obj 529 350 moonlib/mknob 22 100 0 127 0 1 \$0-quf-bypass-2-s \$0-quf-bypass-2-r
 Off-Lev -44 20 0 10 -258113 -262144 -1 9900 1;
-#X obj 608 171 mknob 22 100 0 127 0 1 \$0-quf-type-3-s \$0-quf-type-3-r
+#X obj 608 171 moonlib/mknob 22 100 0 127 0 1 \$0-quf-type-3-s \$0-quf-type-3-r
 M -12 20 0 12 -1 -262144 -1 2900 1;
 #X floatatom 608 194 5 0 0 0 - #0-quf-typeNo-3-r #0-quf-typeNo-3-s
 ;
-#X obj 608 218 mknob 22 100 1 127 1 1 \$0-quf-q-3-s \$0-quf-q-3-r Q
+#X obj 608 218 moonlib/mknob 22 100 1 127 1 1 \$0-quf-q-3-s \$0-quf-q-3-r Q
 -12 20 0 12 -1 -262144 -1 5000 1;
-#X obj 608 260 mknob 22 100 0 127 0 1 \$0-quf-freq-3-s \$0-quf-freq-3-r
+#X obj 608 260 moonlib/mknob 22 100 0 127 0 1 \$0-quf-freq-3-s \$0-quf-freq-3-r
 F -12 20 0 12 -1 -262144 -1 0 1;
-#X obj 609 303 mknob 22 100 0 127 0 1 \$0-quf-deltaF-3-s \$0-quf-deltaF-3-r
+#X obj 609 303 moonlib/mknob 22 100 0 127 0 1 \$0-quf-deltaF-3-s \$0-quf-deltaF-3-r
 DF -16 20 0 12 -1 -262144 -1 5000 1;
-#X obj 609 349 mknob 22 100 0 127 0 1 \$0-quf-bypass-3-s \$0-quf-bypass-3-r
+#X obj 609 349 moonlib/mknob 22 100 0 127 0 1 \$0-quf-bypass-3-s \$0-quf-bypass-3-r
 Off-Lev -44 20 0 10 -258113 -262144 -1 9900 1;
-#X obj 686 171 mknob 22 100 0 127 0 1 \$0-quf-type-4-s \$0-quf-type-4-r
+#X obj 686 171 moonlib/mknob 22 100 0 127 0 1 \$0-quf-type-4-s \$0-quf-type-4-r
 M -12 20 0 12 -1 -262144 -1 2800 1;
 #X floatatom 686 194 5 0 0 0 - #0-quf-typeNo-4-r #0-quf-typeNo-4-s
 ;
-#X obj 686 218 mknob 22 100 1 127 1 1 \$0-quf-q-4-s \$0-quf-q-4-r Q
+#X obj 686 218 moonlib/mknob 22 100 1 127 1 1 \$0-quf-q-4-s \$0-quf-q-4-r Q
 -12 20 0 12 -1 -262144 -1 5100 1;
-#X obj 686 260 mknob 22 100 0 127 0 1 \$0-quf-freq-4-s \$0-quf-freq-4-r
+#X obj 686 260 moonlib/mknob 22 100 0 127 0 1 \$0-quf-freq-4-s \$0-quf-freq-4-r
 F -12 20 0 12 -1 -262144 -1 0 1;
-#X obj 687 303 mknob 22 100 0 127 0 1 \$0-quf-deltaF-4-s \$0-quf-deltaF-4-r
+#X obj 687 303 moonlib/mknob 22 100 0 127 0 1 \$0-quf-deltaF-4-s \$0-quf-deltaF-4-r
 DF -16 20 0 12 -1 -262144 -1 5100 1;
-#X obj 687 349 mknob 22 100 0 127 0 1 \$0-quf-bypass-4-s \$0-quf-bypass-4-r
+#X obj 687 349 moonlib/mknob 22 100 0 127 0 1 \$0-quf-bypass-4-s \$0-quf-bypass-4-r
 Off-Lev -44 20 0 10 -258113 -262144 -1 9900 1;
 #X text 354 147 1 Osc______ \; 2 Off______ \; 3 Notch____ \; 4 Low-pass_
 \; 5 Band-pass \; 6 High-pass \;, f 14;
