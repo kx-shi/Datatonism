@@ -8,13 +8,13 @@
 #X text 351 101 2;
 #X text 436 101 3;
 #X text 517 101 4;
-#X obj 193 153 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-attack-1-s
-\$0-adsr-attack-1-r A -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 193 196 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-hold-1-s \$0-adsr-hold-1-r
+#X obj 193 153 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-attack-1-s \$0-adsr-attack-1-r
+A -8 10 0 8 -1 -262144 -1 0 1;
+#X obj 193 196 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-hold-1-s \$0-adsr-hold-1-r
 S -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 193 239 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-release-1-s
+#X obj 193 239 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-release-1-s
 \$0-adsr-release-1-r R -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 193 282 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-time-1-s \$0-adsr-time-1-r
+#X obj 193 282 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-time-1-s \$0-adsr-time-1-r
 time -22 10 0 8 -1 -262144 -1 0 1;
 #X text 116 400 A;
 #X text 183 400 B;
@@ -22,37 +22,37 @@ time -22 10 0 8 -1 -262144 -1 0 1;
 #X text 352 399 2;
 #X text 437 399 3;
 #X text 517 399 4;
-#X obj 193 351 moonlib/mknob 22 100 0 1 0 1 \$0-adsr-level-1-s \$0-adsr-level-1-r
-OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 0 1;
-#X obj 279 153 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-attack-2-s
-\$0-adsr-attack-2-r A -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 279 196 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-hold-2-s \$0-adsr-hold-2-r
+#X obj 193 351 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-level-1-s \$0-adsr-level-1-r
+OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 9900 1;
+#X obj 279 153 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-attack-2-s \$0-adsr-attack-2-r
+A -8 10 0 8 -1 -262144 -1 0 1;
+#X obj 279 196 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-hold-2-s \$0-adsr-hold-2-r
 S -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 279 239 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-release-2-s
+#X obj 279 239 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-release-2-s
 \$0-adsr-release-2-r R -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 279 282 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-time-2-s \$0-adsr-time-2-r
+#X obj 279 282 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-time-2-s \$0-adsr-time-2-r
 time -22 10 0 8 -1 -262144 -1 0 1;
-#X obj 279 351 moonlib/mknob 22 100 0 1 0 1 \$0-adsr-level-2-s \$0-adsr-level-2-r
+#X obj 279 351 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-level-2-s \$0-adsr-level-2-r
 OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 0 1;
-#X obj 368 153 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-attack-3-s
-\$0-adsr-attack-3-r A -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 368 196 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-hold-3-s \$0-adsr-hold-3-r
+#X obj 368 153 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-attack-3-s \$0-adsr-attack-3-r
+A -8 10 0 8 -1 -262144 -1 0 1;
+#X obj 368 196 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-hold-3-s \$0-adsr-hold-3-r
 S -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 368 239 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-release-3-s
+#X obj 368 239 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-release-3-s
 \$0-adsr-release-3-r R -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 368 282 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-time-3-s \$0-adsr-time-3-r
+#X obj 368 282 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-time-3-s \$0-adsr-time-3-r
 time -22 10 0 8 -1 -262144 -1 0 1;
-#X obj 368 351 moonlib/mknob 22 100 0 1 0 1 \$0-adsr-level-3-s \$0-adsr-level-3-r
+#X obj 368 351 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-level-3-s \$0-adsr-level-3-r
 OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 0 1;
-#X obj 457 153 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-attack-4-s
-\$0-adsr-attack-4-r A -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 457 196 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-hold-4-s \$0-adsr-hold-4-r
+#X obj 457 153 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-attack-4-s \$0-adsr-attack-4-r
+A -8 10 0 8 -1 -262144 -1 0 1;
+#X obj 457 196 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-hold-4-s \$0-adsr-hold-4-r
 S -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 457 239 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-release-4-s
+#X obj 457 239 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-release-4-s
 \$0-adsr-release-4-r R -8 10 0 8 -1 -262144 -1 0 1;
-#X obj 457 282 moonlib/mknob 22 100 0.1 10 0 1 \$0-adsr-time-4-s \$0-adsr-time-4-r
+#X obj 457 282 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-time-4-s \$0-adsr-time-4-r
 time -22 10 0 8 -1 -262144 -1 0 1;
-#X obj 457 351 moonlib/mknob 22 100 0 1 0 1 \$0-adsr-level-4-s \$0-adsr-level-4-r
+#X obj 457 351 moonlib/mknob 22 100 0 127 0 1 \$0-adsr-level-4-s \$0-adsr-level-4-r
 OFF-LEVEL 2 -5 0 8 -258113 -262144 -1 0 1;
 #X obj 12 10 declare -lib moonlib;
 #X obj 179 351 tgl 10 0 \$0-adsr-ttroggle-1-s \$0-adsr-ttroggle-1-r
@@ -3353,7 +3353,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X text 19 157 ms;
 #X text 164 157 s;
 #X obj 117 134 / 1000;
-#X obj 44 89 expr (($f1*100000)/127) + 10;
+#X obj 44 89 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 6 0 2 0;
 #X connect 7 0 1 0;
@@ -3402,7 +3402,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3417,7 +3417,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 91 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3432,7 +3432,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3496,12 +3496,12 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 1717 374 ==;
 #X obj 1725 347 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1984 795 pack 0 50;
+#X obj 1989 797 pack 0 50;
 #X obj 2019 733 * -1;
 #X obj 2019 759 + 1;
 #X obj 1837 814 pack 0 50;
 #X obj 1837 837 line~;
-#X obj 1984 818 line~;
+#X obj 1989 820 line~;
 #X text 1813 772 pure signal;
 #X text 2018 670 bypass;
 #X obj 695 1019 outlet~ A;
@@ -3602,7 +3602,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X text 19 157 ms;
 #X text 164 157 s;
 #X obj 117 134 / 1000;
-#X obj 44 89 expr (($f1*100000)/127) + 10;
+#X obj 44 89 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 6 0 2 0;
 #X connect 7 0 1 0;
@@ -3643,7 +3643,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3658,7 +3658,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3673,7 +3673,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3779,7 +3779,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X text 19 157 ms;
 #X text 164 157 s;
 #X obj 117 134 / 1000;
-#X obj 44 89 expr (($f1*100000)/127) + 10;
+#X obj 44 89 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 6 0 2 0;
 #X connect 7 0 1 0;
@@ -3820,7 +3820,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3835,7 +3835,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3850,7 +3850,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 91 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -3956,7 +3956,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X text 19 157 ms;
 #X text 164 157 s;
 #X obj 117 134 / 1000;
-#X obj 44 89 expr (($f1*100000)/127) + 10;
+#X obj 44 88 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 6 0 2 0;
 #X connect 7 0 1 0;
@@ -3997,7 +3997,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -4012,7 +4012,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 90 expr (($f1*100000)/127) + 10;
+#X obj 44 90 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
@@ -4027,7 +4027,7 @@ OFFLVL-1 OFFLVL-2 OFFLVL-3 OFFLVL-4 EXT-A EXT-B, f 109;
 #X obj 117 136 / 1000;
 #X text 19 157 ms;
 #X text 164 157 s;
-#X obj 44 89 expr (($f1*100000)/127) + 10;
+#X obj 44 89 expr (($f1*10000)/127) + 10;
 #X connect 0 0 7 0;
 #X connect 4 0 2 0;
 #X connect 7 0 1 0;
