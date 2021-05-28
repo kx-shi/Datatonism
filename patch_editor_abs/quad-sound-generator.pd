@@ -2,12 +2,12 @@
 #X declare -lib moonlib;
 #X obj 51 103 cnv 15 428 314 empty empty QUAD-SOUND-GENERATOR_3002
 10 35 0 15 -233017 -66577 0;
-#X obj 117 330 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s1 \$0-sound-gen-l-r1
-L -12 12 0 12 -258113 -262144 -45076 0 1;
-#X obj 118 227 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s1
-\$0-sound-gen-freq-r1 F -12 12 0 12 -1 -262144 -1 0 1;
-#X obj 117 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s1 \$0-sound-gen-w-r1
-W -12 12 0 12 -1 -262144 -1 0 1;
+#X obj 93 330 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s1 \$0-sound-gen-l-r1
+Vol 30 12 0 12 -258113 -262144 -45076 0 1;
+#X obj 94 227 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s1
+\$0-sound-gen-freq-r1 Freq 30 12 0 12 -1 -262144 -1 0 1;
+#X obj 93 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s1 \$0-sound-gen-w-r1
+Wave 30 12 0 12 -1 -262144 -1 0 1;
 #X obj 93 24 inlet~ A;
 #X obj 162 25 inlet~ B;
 #X obj 232 26 inlet~ one;
@@ -38,24 +38,24 @@ W -12 12 0 12 -1 -262144 -1 0 1;
 #X msg 1671 307 4;
 #X obj 1165 507 quad-sound-generator-router;
 #X obj 1250 303 r \$0-sound-gen-l-s1;
-#X obj 208 330 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s2 \$0-sound-gen-l-r2
-L -12 12 0 12 -258113 -262144 -45076 0 1;
-#X obj 209 227 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s2
-\$0-sound-gen-freq-r2 F -12 12 0 12 -1 -262144 -1 0 1;
-#X obj 208 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s2 \$0-sound-gen-w-r2
-W -12 12 0 12 -1 -262144 -1 0 1;
-#X obj 292 330 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s3 \$0-sound-gen-l-r3
-L -12 12 0 12 -258113 -262144 -45076 0 1;
-#X obj 293 227 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s3
-\$0-sound-gen-freq-r3 F -12 12 0 12 -1 -262144 -1 0 1;
-#X obj 292 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s3 \$0-sound-gen-w-r3
-W -12 12 0 12 -1 -262144 -1 0 1;
-#X obj 376 330 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s4 \$0-sound-gen-l-r4
-L -12 12 0 12 -258113 -262144 -45076 0 1;
-#X obj 376 227 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s4
-\$0-sound-gen-freq-r4 F -12 12 0 12 -1 -262144 -1 0 1;
-#X obj 376 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s4 \$0-sound-gen-w-r4
-W -12 12 0 12 -1 -262144 -1 0 1;
+#X obj 193 330 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s2 \$0-sound-gen-l-r2
+Vol 30 12 0 12 -258113 -262144 -45076 0 1;
+#X obj 194 227 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s2
+\$0-sound-gen-freq-r2 Freq 30 12 0 12 -1 -262144 -1 0 1;
+#X obj 193 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s2 \$0-sound-gen-w-r2
+Wave 30 12 0 12 -1 -262144 -1 0 1;
+#X obj 301 330 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s3 \$0-sound-gen-l-r3
+Vol 30 12 0 12 -258113 -262144 -45076 0 1;
+#X obj 302 227 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s3
+\$0-sound-gen-freq-r3 Freq 30 12 0 12 -1 -262144 -1 0 1;
+#X obj 301 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s3 \$0-sound-gen-w-r3
+Wave 30 12 0 12 -1 -262144 -1 0 1;
+#X obj 403 330 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-l-s4 \$0-sound-gen-l-r4
+Vol 30 12 0 12 -258113 -262144 -45076 0 1;
+#X obj 403 227 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-freq-s4
+\$0-sound-gen-freq-r4 Freq 30 12 0 12 -1 -262144 -1 0 1;
+#X obj 403 277 moonlib/mknob 25 100 0 127 0 1 \$0-sound-gen-w-s4 \$0-sound-gen-w-r4
+Wave 30 12 0 12 -1 -262144 -1 0 1;
 #X obj 1109 374 s~ \$0-channel-1;
 #X obj 1165 401 r~ \$0-channel-1;
 #X msg 1419 309 OFF;
@@ -70,11 +70,11 @@ W -12 12 0 12 -1 -262144 -1 0 1;
 #X text 1108 87 Channel 1;
 #X obj 593 265 *~;
 #X obj 628 220 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 11500 1;
+-1 -1 0 1;
 #X obj 625 245 / 127;
 #X obj 593 305 dac~;
-#X obj 86 280 tgl 15 1 \$0-sound-gen-low-freq-s1 \$0-sound-gen-low-freq-r1
-LFO -1 -7 0 10 -262144 -1 -1 0 1;
+#X obj 74 282 tgl 15 1 \$0-sound-gen-low-freq-s1 \$0-sound-gen-low-freq-r1
+LFO 0 -8 0 10 -262144 -1 -1 0 1;
 #X obj 1144 153 r \$0-sound-gen-low-freq-s1;
 #X obj 232 47 s~ \$0-sound-gen-inlet1;
 #X obj 93 47 s~ \$0-sound-gen-inletA;
@@ -95,12 +95,12 @@ OFF_EXP_LIN_1_3_4 0 -8 0 10 -262144 -1 -1 0;
 OFF_EXP_LIN_1_2_4 0 -8 0 10 -262144 -1 -1 0;
 #X obj 376 178 hradio 15 1 1 6 \$0-sound-gen-mod-s4 \$0-sound-gen-mod-r4
 OFF_EXP_LIN_1_2_3 0 -8 0 10 -262144 -1 -1 0;
-#X obj 177 279 tgl 15 1 \$0-sound-gen-low-freq-s2 \$0-sound-gen-low-freq-r2
-LFO -1 -7 0 10 -262144 -1 -1 0 1;
-#X obj 261 279 tgl 15 1 \$0-sound-gen-low-freq-s3 \$0-sound-gen-low-freq-r3
-LFO -1 -7 0 10 -262144 -1 -1 0 1;
-#X obj 345 280 tgl 15 1 \$0-sound-gen-low-freq-s4 \$0-sound-gen-low-freq-r4
-LFO -1 -7 0 10 -262144 -1 -1 0 1;
+#X obj 173 282 tgl 15 1 \$0-sound-gen-low-freq-s2 \$0-sound-gen-low-freq-r2
+LFO 0 -8 0 10 -262144 -1 -1 0 1;
+#X obj 280 282 tgl 15 1 \$0-sound-gen-low-freq-s3 \$0-sound-gen-low-freq-r3
+LFO 0 -8 0 10 -262144 -1 -1 0 1;
+#X obj 382 283 tgl 15 1 \$0-sound-gen-low-freq-s4 \$0-sound-gen-low-freq-r4
+LFO 0 -8 0 10 -262144 -1 -1 0 1;
 #X obj 1421 637 *~ 127;
 #X obj 1421 663 mtof~;
 #X obj 1421 609 r~ \$0-sound-gen-inlet1;
@@ -2398,23 +2398,20 @@ MOD4 W1 W2 W3 W4 L1 L2 L3 L4;
 #X connect 140 18 111 0;
 #X connect 140 19 116 0;
 #X restore 84 608 pd external-messages;
-#X obj 304 138 cnv 5 5 5 empty \$0-instance-num 9 0 0 0 15 -228856
+#X obj 304 138 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 15 -228856
 -66577 0;
-#X text 405 283 Sine-square;
-#X text 417 231 Frequency;
-#X text 435 335 Volume;
 #X text 344 598 Selector of input sound to modulate the frequency:
 EXP - Exponentially modulate with the external input \; LIN - Linearly
 modulate with the external input \; Num(2) - Modulate with the corresponding
 channel.;
 #X text 343 659 Low frequency oscillation - LFO;
 #X text 342 672 Toggle of low frequency oscillation.;
-#X text 344 699 Frequency - F;
 #X text 344 713 Knob of frequency.;
-#X text 344 740 Waveform fader - W;
 #X text 343 752 Fader of sine wave to square wave.;
 #X text 346 585 Modulation input sound - OFF_EXP_LIN_2_3_4;
-#X text 343 778 Volumne - L;
+#X text 344 699 Frequency - Freq;
+#X text 344 740 Waveform fader - Wave;
+#X text 343 778 Volumne - Vol;
 #X connect 4 0 54 0;
 #X connect 5 0 55 0;
 #X connect 6 0 53 0;
