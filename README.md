@@ -1,6 +1,6 @@
 # Datatonism
 
-Datatonism is a digital emulation of the Dataton System 3000 – a Swedish electronic music synthesizer. Designed by Björn Sandlund in the 1970s, the system consists of brick-shaped modules that connect to each other sideways like Lego. As final project for the course DT2213 Musical Communication and Music Technology given at KTH Royal Institute of Technology, we have re-created Sandlunds system in a digital context. The name and main patch is dervied from [Automatonism](https://www.automatonism.com/), a modular synth system created for Pure Data.
+Datatonism is a digital emulation of the Dataton System 3000 – a Swedish electronic music synthesizer. Designed by Björn Sandlund in the 1970s, the system consists of brick-shaped modules that connect to each other sideways like Legos. As final project for the course DT2213 Musical Communication and Music Technology given at KTH Royal Institute of Technology, we have re-created Sandlunds system in a digital context. The name and main patch is derived from [Automatonism](https://www.automatonism.com/), a modular synth system created for Pure Data.
 
 The system consists of 12 modules – 3 source modules, 5 manipulating modules, and 4 editing modules.
 
@@ -10,9 +10,14 @@ Datatonism is developed on Pure Data. External libraries include `moonlib`.
 
 **Start-up**
 - To use Datatonism, you simply download the repository and open the patch called `main.pd`.
+- If you do not have the `moonlib` library, this needs to be installed:
+  - Open Pd
+  - Click Help --> Find externals
+  - Search for moonlib and click on the result (if multiple results, click the latest updated one)
+  - Sometimes, you'll have to manually add the path. You can do this by clicking File --> Preferences --> Path --> 'New', and find the moonlib folder
 - Modules can be found through the MODULES(esc) button or by pressing esc.
 - Most modules have 6 inlets and 6 outlets – 2 for the A/B stereo bus and 4 channels. Connections are generally made between the same types, however it is also possible to mix and match.
-- The general ordering of inlets/outlets are A, B, ch1, ch2, ch3, ch4.
+- The general order of inlets/outlets are A, B, ch1, ch2, ch3, ch4.
 - **[dac~] is not built in to the mixers and need to be created and connected by yourself.**
 
 
