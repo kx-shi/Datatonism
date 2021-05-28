@@ -1,9 +1,9 @@
-#N canvas 0 49 896 667 10;
+#N canvas 0 49 634 667 10;
 #X declare -lib moonlib;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -33,7 +33,7 @@
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -205,7 +205,7 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -220,7 +220,7 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -237,7 +237,7 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -267,7 +267,7 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -297,7 +297,7 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -327,7 +327,7 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -362,7 +362,7 @@ E 23 -2 0 8 -1 -262144 -1 0 1;
 #X obj 1247 1063 / 127;
 #X obj 2407 1078 ../other_patches/pan~, f 7;
 #X obj 2446 1155 outlet~ Ch4;
-#X text 27 964 STATE SAVING and EXTERNAL CONTROL STUFF;
+#X text 32 1314 STATE SAVING and EXTERNAL CONTROL STUFF;
 #N canvas 32 45 608 679 state-saving-multiple-instances 0;
 #X obj 233 37 loadbang;
 #X obj 1555 192 textfile;
@@ -538,10 +538,10 @@ f f f f;
 #X connect 62 24 83 0;
 #X connect 62 25 84 0;
 #X connect 85 0 1 0;
-#X restore 28 1058 pd state-saving-multiple-instances;
-#X obj 28 1149 s \$0-instance-num;
-#X obj 28 1101 makefilename %d;
-#X msg 28 1126 label \$1;
+#X restore 33 1408 pd state-saving-multiple-instances;
+#X obj 33 1499 s \$0-instance-num;
+#X obj 33 1451 makefilename %d;
+#X msg 33 1476 label \$1;
 #N canvas 74 23 1366 679 state-saving-via-preset-manager-module 0;
 #X obj 54 52 cnv 15 1200 800 empty empty WRITE 20 20 0 20 -233017 -66577
 0;
@@ -1321,7 +1321,7 @@ f f f f;
 #X connect 106 0 88 0;
 #X connect 107 0 89 0;
 #X connect 108 0 20 0;
-#X restore 28 1035 pd state-saving-via-preset-manager-module;
+#X restore 33 1385 pd state-saving-via-preset-manager-module;
 #N canvas 74 29 1366 679 parameter-nudging-system 0;
 #X obj 47 21 cnv 15 580 600 empty empty Knobs 20 20 0 20 -261234 -33289
 0;
@@ -2557,7 +2557,7 @@ f f f f;
 #X connect 127 0 115 0;
 #X connect 134 0 95 0;
 #X connect 135 0 77 0;
-#X restore 28 1012 pd parameter-nudging-system;
+#X restore 33 1362 pd parameter-nudging-system;
 #N canvas 74 55 1366 679 external-messages 0;
 #X floatatom 185 535 5 0 0 0 - - -;
 #X obj 185 327 spigot;
@@ -2931,7 +2931,7 @@ PAN-34-4 SWITCH-A SWITCH-B, f 109;
 #X connect 169 23 145 0;
 #X connect 169 24 158 0;
 #X connect 169 25 163 0;
-#X restore 28 989 pd external-messages;
+#X restore 33 1339 pd external-messages;
 #X obj 2790 1157 outlet~ XEA;
 #X obj 2956 1156 outlet~ XEB;
 #X obj 830 31 inlet~ A;
@@ -2994,7 +2994,7 @@ PAN-34-4 SWITCH-A SWITCH-B, f 109;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -3009,7 +3009,7 @@ PAN-34-4 SWITCH-A SWITCH-B, f 109;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -3054,7 +3054,7 @@ PAN-34-4 SWITCH-A SWITCH-B, f 109;
 #N canvas 612 128 450 300 rs0 0;
 #X obj 153 83 inlet;
 #X obj 151 110 == 0;
-#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 150 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 149 184 line~;
 #X msg 148 160 \$1 100;
@@ -3177,8 +3177,48 @@ PAN-34-4 SWITCH-A SWITCH-B, f 109;
 #X text 2964 1014 SWITCH-B;
 #X text 670 1034 SWITCH-A;
 #X text 947 1031 SWITCH-B;
-#X text 49 447 Overview;
-#X text 29 467 The Universal Mixer ..., f 44;
+#X text 49 467 Overview;
+#X text 48 590 Source switch;
+#X text 47 670 Fader;
+#X text 47 739 Pan-AB;
+#X text 29 487 The Universal Mixer is perhaps Datatonism's most powerful
+mixer. Compared to its predessessors \, SUB MIXER 3202 and MASTER MIXER
+3101 \, it has a much more flexible audio bus structure which make
+it possible to build virtually any input/output mixer consoles by adding
+modules in both X (horisontal) and Y (vertical) directions., f 50
+;
+#X text 27 690 This control is the main fader for each of the four
+channels., f 50;
+#X text 27 759 The Pan-AB knob allows you to pan the input signal onto
+outlet A/B., f 50;
+#X text 47 813 Echo-Send;
+#X text 44 908 Pre-Off-Post;
+#X text 46 1022 Pan-12 and Pan-34;
+#X text 46 1117 Switch-A and Switch-B;
+#X text 24 928 This three-level toggle/radiobutton controls what to
+output in the vertical direction \, i.e. what's being sent to channel
+1-4's outlets. Pre: output signal is not affected by the fader. Off:
+nothing at all is sent to the channel's outlet. Post: signal is controlled
+by the fader., f 50;
+#X text 26 1042 These knobs pans the output signal in the vertical
+direction between the 1 and 2 outlets for the first two channels and
+between 3 and 4 for the last two channels., f 50;
+#X text 26 1137 This two-level toggle switch defines what to add to
+the A and B outlets. XEA/XEB: signals from channel 1-4 - controled
+by the fader and panned onto A/B - are added to the A/B outlets. An
+amount of the signal can also be sent to the XEA/XEB echo-send outlets.
+OFF: Signals from the A/B inlets are just passing through to the A/B
+outlets., f 50;
+#X text 2796 1117 outlet connected to a central echo or reverberation
+unit, f 24;
+#X text 2964 1117 outlet connected to a central echo or reverberation
+unit, f 24;
+#X text 28 610 With this toggle switch controls the sound source. A:
+connects signals from the A/B inlets. Ch1-4: connects signals from
+the channel 1-4 inlets., f 50;
+#X text 27 833 This control is aimed for sending an appropriate amount
+from each of the four channels to outlet XEA/XEB which are meant for
+connecting to a central echo or reverberation unit., f 50;
 #X connect 0 0 2 1;
 #X connect 1 0 3 1;
 #X connect 2 0 177 0;
