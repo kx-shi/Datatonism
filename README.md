@@ -4,9 +4,6 @@ Datatonism is a digital emulation of the Dataton System 3000 – a Swedish elect
 
 The system consists of 12 modules – 3 source modules, 5 manipulating modules, and 4 editing modules.
 
-Below is a screenshot of the system.
-![Datatonism](images/example-patch.png)
-
 ### Requirements / Start-up guide
 **Requirements** \
 Datatonism is developed on Pure Data. External libraries include `moonlib`.
