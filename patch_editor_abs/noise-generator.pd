@@ -9,13 +9,13 @@
 #X obj 788 353 line~;
 #X obj 705 157 pack 0 50;
 #X obj 788 325 pack 0 50;
-#X obj 101 101 cnv 15 428 316 empty empty NOISE_GENERATOR_3004 130
-12 0 14 -233017 -66577 0;
+#X obj 101 101 cnv 15 428 316 empty empty NOISE_GENERATOR_3004 35 50
+0 14 -233017 -66577 0;
 #X obj 100 439 declare -lib moonlib;
-#X obj 216 265 moonlib/mknob 25 100 0 127 0 0 \$0-ng-lowpass-s \$0-ng-lowpass-r
-LOW_PASS_FILTER -24 35 0 8 -1 -262144 -1 0 1;
-#X obj 394 264 moonlib/mknob 25 100 0 127 0 0 \$0-ng-volume-s \$0-ng-volume-r
-VOLUME -2 35 0 8 -258113 -262144 -1 0 1;
+#X obj 212 238 moonlib/mknob 40 100 0 127 0 0 \$0-ng-lowpass-s \$0-ng-lowpass-r
+LOW_PASS_FILTER -17 50 0 8 -1 -262144 -1 0 1;
+#X obj 376 236 moonlib/mknob 40 100 0 127 0 0 \$0-ng-volume-s \$0-ng-volume-r
+VOLUME 5 50 0 8 -258113 -262144 -1 0 1;
 #X obj 649 627 outlet~ A;
 #X obj 752 627 outlet~ B;
 #X text 112 394 A;
@@ -356,7 +356,7 @@ switches) \, do not use [pd morph-paramaters], f 51;
 #X connect 5 0 1 0;
 #X connect 6 0 3 0;
 #X restore 98 528 pd parameter-nudging-system;
-#N canvas 0 56 1366 679 external-messages 1;
+#N canvas 0 56 1366 679 external-messages 0;
 #X floatatom 185 535 5 0 0 0 - - -;
 #X obj 185 327 spigot;
 #X obj 224 278 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
