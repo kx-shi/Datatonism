@@ -4,6 +4,7 @@ Datatonism is a digital emulation of the Dataton System 3000 – a Swedish elect
 
 The system consists of 12 modules – 3 source modules, 5 manipulating modules, and 4 editing modules.
 
+Below is a screenshot of the system.
 ![Datatonism](images/example-patch.png)
 
 ### Requirements / Start-up guide
@@ -19,9 +20,18 @@ Datatonism is developed on Pure Data. External libraries include `moonlib`.
 
 
 ### Help-files / [Documentation](https://github.com/kx-shi/Datatonism/wiki)
-Help-files for the modules are still a work in process. However, there is [documentation](https://github.com/kx-shi/Datatonism/wiki) detailing each module in detail.
+Help-files for the modules are still a work in process. However, there is [documentation](https://github.com/kx-shi/Datatonism/wiki) covering the inlets/outlets, parameters, and functions of each module, and also a bit about its physical counterpart for the curious.
 
 ### Known issues
 - Opening module-patches and changing knob parameters can result in the knobs disappearing/become bigger.
-- Knobs are not editable in Windows Pd 64-bit version due to constraints from `moonlib` (for developers).
-- When initially creating modules you might get an error message: "statesave/x-yyy-zzz-ss.txt: can't open / read failed". This is due to the state saving mechanism having to create a file for each new instance of the module(s) and is not a problem.
+- Knobs are not editable in Windows Pd 64-bit version due to constraints from `moonlib`.
+- When initially creating modules you might get an error message: "statesave/x-yyy-zzz-ss.txt: can't open / read failed". This is due to the state saving mechanism having to create a file for each new instance of the module and is not a problem.
+
+### Team-members
+Dimitrios Aatos Ellinas&emsp;&emsp;&ensp;&nbsp;ellinas@kth.se\
+Zezhe Huang&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;zezhe@kth.se\
+Kristin Johansson Evegård&emsp;evegard@kth.se\
+Carl Leandersson&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;carllea@kth.se\
+Martin Linder Nilsson&emsp;&emsp;&emsp;&nbsp;hmni@kth.se\
+Karolina Shi&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;karshi@kth.se\
+Yan Yu&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;yan8@kth.se
