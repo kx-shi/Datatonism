@@ -1,4 +1,4 @@
-#N canvas 1366 56 1920 1024 10;
+#N canvas 17 410 1440 814 10;
 #X declare -path patch_editor_abs;
 #X declare -lib moonlib;
 #X declare -path other_patches;
@@ -112,7 +112,7 @@ signal or short impulse(square-wave) to function properly.;
 #X obj 36 266 r open-color-code!;
 #X msg 36 313 \; pd-color-code vis \$1;
 #X msg 37 404 1;
-#N canvas 1751 205 389 417 manual 1;
+#N canvas 869 173 389 417 manual 1;
 #X obj 17 12 cnv 15 320 60 empty empty Datatonism_Manual 20 12 0 14
 -33289 -4034 0;
 #X text 37 90 HOW TO USE DATATONISM;
@@ -122,14 +122,14 @@ modules contain modules that can act as sound sources. Manipulating
 modules include modules such as the envelope shaper (e.g. for creating
 adsr) \, filtering \, and echo (i.e. reverb). Finally \, the editing
 modules encompasses various kinds of mixers., f 51;
+#X text 22 326 You can save your work in progress by pressing enter
+\, or the "SAVE!"-button in the menu., f 51;
+#X text 22 374 Happy patching!, f 51;
 #X text 22 231 Each module typically have 6 outlets labeled A \, B
 \, 1 \, 2 \, 3 \, and 4 A/B are buses while 1-4 are channels. While
 there is nothing preventing you from connecting channels to buses \,
 A/B outlets are supposed to connect to A/B inlets and similarly for
 the channels., f 51;
-#X text 22 326 You can save your work in progress by pressing enter
-\, or the "SAVE!"-button in the menu., f 51;
-#X text 22 374 Happy patching!, f 51;
 #X restore 37 358 pd manual;
 #X msg 37 429 \; pd-manual vis \$1;
 #X obj 37 382 r open-manual!;
@@ -1100,7 +1100,7 @@ and send to the name of the module \, for example [s basic-osc];
 #X obj 177 59 r \$0-reset!;
 #X msg 177 81 0;
 #X obj 162 280 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--262144 -1 -1 2 256;
+-262144 -1 -1 3 256;
 #X obj 64 387 t b b;
 #X msg 64 509 loadbang;
 #X obj 91 411 s SAVE-S;
@@ -1169,3 +1169,4 @@ and send to the name of the module \, for example [s basic-osc];
 10 0 15 -4034 -13381 -1;
 #X obj 13 705 declare -lib moonlib;
 #X obj 13 751 declare -path other_patches;
+#X obj 350 400 universal-mixer 3;
