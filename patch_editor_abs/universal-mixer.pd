@@ -542,7 +542,7 @@ f f f f;
 #X obj 98 665 s \$0-instance-num;
 #X obj 98 617 makefilename %d;
 #X msg 98 642 label \$1;
-#N canvas 75 23 1366 679 state-saving-via-preset-manager-module 0;
+#N canvas 74 23 1366 679 state-saving-via-preset-manager-module 1;
 #X obj 54 52 cnv 15 1200 800 empty empty WRITE 20 20 0 20 -233017 -66577
 0;
 #X obj 136 804 textfile;
@@ -560,9 +560,9 @@ f f f f;
 #X obj 162 506 r preset-manager-store-slot;
 #X text 540 747 i.e. "write statesave/\$1-\$2-PATCH_NAME-ss.txt";
 #X text 495 728 <-----rename to match name of Pd patch;
-#X text 515 394 <----- one "f" for each parameter;
-#X text 512 469 <----- one "$N" for each parameter;
-#X text 908 348 <-----rename to match send symbol of each GUI element
+#X text 503 374 <----- one "f" for each parameter;
+#X text 512 447 <----- one "$N" for each parameter;
+#X text 903 315 <-----rename to match send symbol of each GUI element
 ;
 #X obj 54 868 cnv 15 1200 800 empty empty READ 20 20 0 20 -233017 -66577
 0;
@@ -608,8 +608,8 @@ switches) \, do not use [pd morph-paramaters], f 51;
 #X obj 875 204 r \$0-um-ch2-pan12-s;
 #X obj 884 227 r \$0-um-ch3-pan34-s;
 #X obj 892 250 r \$0-um-ch4-pan34-s;
-#X obj 771 318 r \$0-um-switchA-s;
-#X obj 771 341 r \$0-um-switchB-s;
+#X obj 772 308 r \$0-um-switchA-s;
+#X obj 772 331 r \$0-um-switchB-s;
 #X obj 134 375 pack f f f f f f f f f f f f f f f f f f f f f f f f
 f f;
 #X msg 134 438 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
@@ -1249,6 +1249,7 @@ f f f f;
 #X connect 28 0 108 0;
 #X connect 29 0 27 0;
 #X connect 30 0 26 0;
+#X connect 36 0 2 1;
 #X connect 37 0 62 3;
 #X connect 38 0 62 2;
 #X connect 39 0 62 1;
