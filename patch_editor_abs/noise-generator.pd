@@ -11,7 +11,7 @@
 #X obj 788 325 pack 0 50;
 #X obj 101 101 cnv 15 428 316 empty empty NOISE_GENERATOR_3004 35 50
 0 14 -233017 -66577 0;
-#X obj 100 439 declare -lib moonlib;
+#X obj 42 19 declare -lib moonlib;
 #X obj 212 238 moonlib/mknob 40 100 0 127 0 0 \$0-ng-lowpass-s \$0-ng-lowpass-r
 LOW_PASS_FILTER -17 50 0 8 -1 -262144 -1 0 1;
 #X obj 376 236 moonlib/mknob 40 100 0 127 0 0 \$0-ng-volume-s \$0-ng-volume-r
@@ -20,7 +20,7 @@ VOLUME 5 50 0 8 -258113 -262144 -1 0 1;
 #X obj 752 627 outlet~ B;
 #X text 112 394 A;
 #X text 507 395 B;
-#X text 97 480 STATE SAVING and EXTERNAL CONTROL STUFF;
+#X text 47 780 STATE SAVING and EXTERNAL CONTROL STUFF;
 #N canvas 257 23 1165 679 state-saving-multiple-instances 0;
 #X obj 233 37 loadbang;
 #X obj 1555 192 textfile;
@@ -96,10 +96,10 @@ and READ sides;
 #X connect 35 0 4 0;
 #X connect 36 0 6 1;
 #X connect 38 0 31 1;
-#X restore 98 574 pd state-saving-multiple-instances;
-#X obj 98 665 s \$0-instance-num;
-#X obj 98 617 makefilename %d;
-#X msg 98 642 label \$1;
+#X restore 48 874 pd state-saving-multiple-instances;
+#X obj 48 965 s \$0-instance-num;
+#X obj 48 917 makefilename %d;
+#X msg 48 942 label \$1;
 #N canvas 74 23 1366 679 state-saving-via-preset-manager-module 0;
 #X obj 54 52 cnv 15 1200 800 empty empty WRITE 20 20 0 20 -233017 -66577
 0;
@@ -261,7 +261,7 @@ switches) \, do not use [pd morph-paramaters], f 51;
 #X connect 45 0 36 0;
 #X connect 45 1 37 0;
 #X connect 46 0 20 0;
-#X restore 98 551 pd state-saving-via-preset-manager-module;
+#X restore 48 851 pd state-saving-via-preset-manager-module;
 #N canvas 74 29 559 344 parameter-nudging-system 0;
 #X obj 47 21 cnv 15 340 200 empty empty Knobs 20 20 0 20 -261234 -33289
 0;
@@ -355,7 +355,7 @@ switches) \, do not use [pd morph-paramaters], f 51;
 #X connect 4 0 8 0;
 #X connect 5 0 1 0;
 #X connect 6 0 3 0;
-#X restore 98 528 pd parameter-nudging-system;
+#X restore 48 828 pd parameter-nudging-system;
 #N canvas 0 56 1366 679 external-messages 0;
 #X floatatom 185 535 5 0 0 0 - - -;
 #X obj 185 327 spigot;
@@ -413,9 +413,23 @@ switches) \, do not use [pd morph-paramaters], f 51;
 #X connect 22 0 10 0;
 #X connect 22 1 19 0;
 #X connect 25 0 12 0;
-#X restore 98 505 pd external-messages;
+#X restore 48 805 pd external-messages;
 #X obj 705 94 r \$0-ng-lowpass-s;
 #X obj 788 270 r \$0-ng-volume-s;
+#X text 69 467 Overview;
+#X text 704 73 LPF;
+#X text 783 250 VOLUME;
+#X text 68 549 LPF;
+#X text 68 689 VOLUME;
+#X text 48 569 The low pass filter control knob gives you the opportunity
+to control the amount of high frequency content in the noise. With
+this knob turned in its most counterclockwise position \, the noise
+output is in the sub-sonic range which is useful for random modulation
+of frequencies or output levels.;
+#X text 49 487 The Noise Generator module is here for you to create
+some real high quality noise.;
+#X text 48 709 With the volume knob you can easily adjust the level
+of the noise signal.;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 2 0 7 0;
