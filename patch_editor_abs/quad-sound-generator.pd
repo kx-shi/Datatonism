@@ -1,4 +1,4 @@
-#N canvas 0 25 1440 847 10;
+#N canvas 0 56 1366 679 10;
 #X declare -lib moonlib;
 #X obj 51 103 cnv 15 428 314 empty empty QUAD-SOUND-GENERATOR_3002
 10 35 0 15 -233017 -66577 0;
@@ -255,18 +255,10 @@ LFO 0 -8 0 10 -262144 -1 -1 0 1;
 #X obj 516 381 adc~;
 #X obj 671 25 declare -lib moonlib;
 #X obj 827 198 tabwrite~ \$0-qsg-array;
-#X text 67 102 A;
+#X text 54 102 A;
 #X text 134 102 B;
-#X text 219 101 1;
-#X text 302 101 2;
-#X text 387 101 3;
-#X text 468 101 4;
-#X text 67 400 A;
-#X text 134 400 B;
-#X text 219 399 1;
-#X text 303 399 2;
-#X text 388 399 3;
-#X text 468 399 4;
+#X text 55 402 A;
+#X text 134 402 B;
 #N canvas 720 25 720 847 state-saving-multiple-instances 0;
 #X obj 138 29 loadbang;
 #X obj 729 407 textfile;
@@ -2398,7 +2390,7 @@ MOD4 W1 W2 W3 W4 L1 L2 L3 L4;
 #X connect 140 18 111 0;
 #X connect 140 19 116 0;
 #X restore 84 608 pd external-messages;
-#X obj 304 138 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 15 -228856
+#X obj 312 138 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 15 -228856
 -66577 0;
 #X text 344 598 Selector of input sound to modulate the frequency:
 EXP - Exponentially modulate with the external input \; LIN - Linearly
@@ -2412,6 +2404,14 @@ channel.;
 #X text 344 699 Frequency - Freq;
 #X text 344 740 Waveform fader - Wave;
 #X text 343 778 Volumne - Vol;
+#X text 213 101 Ch1;
+#X text 296 101 Ch2;
+#X text 380 101 Ch3;
+#X text 457 101 Ch4;
+#X text 213 401 Ch1;
+#X text 296 401 Ch2;
+#X text 380 401 Ch3;
+#X text 457 401 Ch4;
 #X connect 4 0 54 0;
 #X connect 5 0 55 0;
 #X connect 6 0 53 0;
@@ -2606,7 +2606,7 @@ channel.;
 #X connect 216 0 217 0;
 #X connect 218 0 220 0;
 #X connect 219 0 220 0;
-#X connect 237 0 239 0;
-#X connect 239 0 240 0;
-#X connect 240 0 238 0;
+#X connect 229 0 231 0;
+#X connect 231 0 232 0;
+#X connect 232 0 230 0;
 #X coords 0 -1 1 1 430 320 1 50 100;

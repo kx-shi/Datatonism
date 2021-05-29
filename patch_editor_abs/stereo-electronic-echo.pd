@@ -1,4 +1,4 @@
-#N canvas 0 23 1253 676 10;
+#N canvas 3 56 1253 676 10;
 #X obj 192 132 cnv 5 5 5 empty empty STEREO-ELECTRONIC-ECHO 0 0 0 10
 -262144 -66577 0;
 #X obj 930 52 openpanel;
@@ -177,7 +177,7 @@
 #X obj 94 213 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 98 247 1;
-#X obj 96 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 96 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 8 335 *~;
 #X obj 111 332 pack 0 10;
@@ -389,34 +389,33 @@
 #X connect 23 0 24 0;
 #X connect 24 0 17 0;
 #X restore 714 385 pd lp_filter;
-#X obj 101 103 cnv 15 428 314 empty empty 3102_ELECTRONIC_ECHO 20 12
-0 14 -233017 -66577 0;
-#X obj 437 164 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 101 103 cnv 15 428 314 empty empty ELECTRONIC-ECHO_3102 10 35
+0 15 -233017 -66577 0;
+#X obj 325 137 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 15 -228856
 -66577 0;
 #X obj 323 305 mknob 25 100 0 127 0 0 \$0-drywet-s \$0-drywet-r Dry/Wet
--2 -6 0 12 -33289 -262144 -1 0 1;
+-2 -6 0 12 -258113 -262144 -1 0 1;
 #X floatatom 323 335 5 0 0 0 - - -;
 #X obj 187 201 mknob 25 100 0 113.1 0 0 \$0-feedback-s \$0-feedback-r
-Feedback -2 -6 0 12 -33289 -262144 -1 3000 1;
+Feedback -2 -6 0 12 -33289 -262144 -1 0 1;
 #X obj 188 306 mknob 25 100 0 127 0 0 \$0-delayTime-s \$0-delayTime-r
-Delay_Time -2 -6 0 12 -33289 -262144 -1 9900 1;
+Delay_Time -2 -6 0 12 -33289 -262144 -1 0 1;
 #X obj 321 199 mknob 25 100 0 127 0 0 \$0-A-B-Blend-s \$0-A-B-Blend-r
-A-B_Blend -2 -6 0 12 -33289 -262144 -1 600 1;
+A-B_Blend -2 -6 0 12 -33289 -262144 -1 0 1;
 #X floatatom 321 233 5 0 0 0 - - -;
 #X floatatom 186 232 5 0 0 0 - - -;
 #X floatatom 187 336 5 0 0 0 - - -;
 #X msg 532 223 0;
-#X obj 438 209 hradio 15 1 0 2 \$0-b-flanger-s \$0-b-flanger-r Flanger_Mode
-0 -8 0 10 -262144 -1 -1 1;
-#X text 471 210 on;
-#X text 410 209 off;
+#X obj 458 164 hradio 15 1 0 2 \$0-b-flanger-s \$0-b-flanger-r Flanger_Mode
+-20 -6 0 10 -262144 -1 -1 0;
+#X text 490 168 on;
+#X text 434 168 off;
 #X text 101 402 A;
 #X text 517 401 B;
 #X text 101 102 A;
 #X text 516 103 B;
 #X text 222 335 ms;
 #X obj 712 273 inlet~ modulator;
-#X text 291 120 (for extra flanger modulation);
 #X text 729 44 for testing;
 #X obj 330 640 s feedback_blend_t;
 #X obj 466 650 s feedback_blend_1-t;
@@ -425,8 +424,7 @@ A-B_Blend -2 -6 0 12 -33289 -262144 -1 600 1;
 #X obj 1281 456 r feedback_blend_1-t;
 #X obj 1418 455 r feedback_blend_t;
 #X text 1268 432 A bus feedback = (1-t)*B_Delay + t*A_Delay;
-#X text 294 102 Oscilator Input;
-#X text 414 231 (works on B bus);
+#X text 422 184 (works on B bus);
 #X obj 196 439 r feedback_blend_t;
 #N canvas 332 23 948 644 state-saving-multiple-instances 0;
 #X obj 138 29 loadbang;
@@ -949,6 +947,7 @@ parameter;
 #X obj 613 392 r \$0-drywet-s;
 #X obj 945 559 r \$0-feedback-s;
 #X obj 1415 574 r \$0-feedback-s;
+#X text 267 102 Oscillator Input;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 4 0 35 0;
@@ -972,7 +971,7 @@ parameter;
 #X connect 26 0 21 0;
 #X connect 28 0 27 0;
 #X connect 28 0 70 0;
-#X connect 34 0 102 0;
+#X connect 34 0 101 0;
 #X connect 36 0 39 0;
 #X connect 38 0 40 0;
 #X connect 41 0 42 0;
@@ -986,7 +985,7 @@ parameter;
 #X connect 48 0 23 0;
 #X connect 49 0 22 0;
 #X connect 54 0 34 0;
-#X connect 54 0 101 0;
+#X connect 54 0 100 0;
 #X connect 56 0 3 0;
 #X connect 58 0 57 1;
 #X connect 59 0 78 0;
@@ -1018,25 +1017,25 @@ parameter;
 #X connect 78 0 9 0;
 #X connect 89 0 81 0;
 #X connect 98 0 61 0;
-#X connect 103 0 45 1;
-#X connect 103 0 50 0;
-#X connect 104 0 46 1;
-#X connect 104 0 51 0;
-#X connect 105 0 47 1;
-#X connect 105 0 52 0;
-#X connect 106 0 49 1;
-#X connect 106 0 53 0;
-#X connect 110 0 86 0;
-#X connect 111 0 113 0;
-#X connect 113 0 114 0;
-#X connect 114 0 112 0;
-#X connect 120 0 87 0;
-#X connect 121 0 88 0;
-#X connect 122 0 54 0;
-#X connect 123 0 73 0;
-#X connect 124 0 74 0;
-#X connect 125 0 75 0;
-#X connect 126 0 72 0;
-#X connect 127 0 44 0;
-#X connect 128 0 48 0;
+#X connect 102 0 45 1;
+#X connect 102 0 50 0;
+#X connect 103 0 46 1;
+#X connect 103 0 51 0;
+#X connect 104 0 47 1;
+#X connect 104 0 52 0;
+#X connect 105 0 49 1;
+#X connect 105 0 53 0;
+#X connect 108 0 86 0;
+#X connect 109 0 111 0;
+#X connect 111 0 112 0;
+#X connect 112 0 110 0;
+#X connect 118 0 87 0;
+#X connect 119 0 88 0;
+#X connect 120 0 54 0;
+#X connect 121 0 73 0;
+#X connect 122 0 74 0;
+#X connect 123 0 75 0;
+#X connect 124 0 72 0;
+#X connect 125 0 44 0;
+#X connect 126 0 48 0;
 #X coords 0 -1 1 1 430 320 1 100 100;

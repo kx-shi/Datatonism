@@ -1,4 +1,4 @@
-#N canvas 315 98 1074 715 12;
+#N canvas 289 56 1074 676 12;
 #X declare -lib moonlib;
 #X obj 646 49 noise~;
 #X obj 646 229 lop~;
@@ -9,8 +9,8 @@
 #X obj 788 353 line~;
 #X obj 705 157 pack 0 50;
 #X obj 788 325 pack 0 50;
-#X obj 101 101 cnv 15 428 316 empty empty NOISE_GENERATOR_3004 35 50
-0 14 -233017 -66577 0;
+#X obj 101 101 cnv 15 428 316 empty empty NOISE_GENERATOR_3004 10 35
+0 15 -233017 -66577 0;
 #X obj 42 19 declare -lib moonlib;
 #X obj 212 238 moonlib/mknob 40 100 0 127 0 0 \$0-ng-lowpass-s \$0-ng-lowpass-r
 LOW_PASS_FILTER -17 50 0 8 -1 -262144 -1 0 1;
@@ -18,8 +18,8 @@ LOW_PASS_FILTER -17 50 0 8 -1 -262144 -1 0 1;
 VOLUME 5 50 0 8 -258113 -262144 -1 0 1;
 #X obj 649 627 outlet~ A;
 #X obj 752 627 outlet~ B;
-#X text 112 394 A;
-#X text 507 395 B;
+#X text 107 399 A;
+#X text 514 399 B;
 #X text 47 780 STATE SAVING and EXTERNAL CONTROL STUFF;
 #N canvas 257 23 1165 679 state-saving-multiple-instances 0;
 #X obj 233 37 loadbang;
@@ -430,6 +430,8 @@ of frequencies or output levels.;
 some real high quality noise.;
 #X text 48 709 With the volume knob you can easily adjust the level
 of the noise signal.;
+#X obj 319 136 cnv 5 5 5 empty \$0-instance-num 3 0 0 0 15 -228856
+-66577 0;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 2 0 7 0;

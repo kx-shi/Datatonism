@@ -1,4 +1,4 @@
-#N canvas 26 23 1254 703 10;
+#N canvas 26 56 1254 676 10;
 #X declare -lib moonlib;
 #X obj 590 324 r \$0_level_1_s;
 #X obj 590 52 r \$0-phase-1-s;
@@ -172,24 +172,24 @@
 #X obj 799 330 r \$0_level_2_s;
 #X obj 988 362 / 2.11667;
 #X obj 1168 366 / 2.11667;
-#X obj 101 103 cnv 15 428 314 empty empty 3001_INPUT_AMPLIFIER 20 12
-0 14 -233017 -66577 0;
-#X obj 499 132 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 101 101 cnv 15 428 316 empty empty INPUT-AMPLIFIER_3001 10 35
+0 15 -233017 -66577 0;
+#X obj 325 136 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 15 -228856
 -66577 0;
-#X obj 138 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_1_s \$0_level_1_r Gain
--2 -6 0 12 -258113 -1 -1 1700 1;
+#X obj 138 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_1_s \$0_level_1_r
+Gain -2 -6 0 12 -258113 -1 -1 0 1;
 #X floatatom 138 356 5 0 0 0 - - -;
 #X text 174 355 db;
-#X obj 240 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_2_s \$0_level_2_r Gain
--2 -6 0 12 -258113 -1 -1 1700 1;
+#X obj 240 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_2_s \$0_level_2_r
+Gain -2 -6 0 12 -258113 -1 -1 0 1;
 #X floatatom 241 356 5 0 0 0 - - -;
 #X text 277 357 db;
-#X obj 338 329 moonlib/mknob 25 100 0 127 0 0 \$0_level_3_s \$0_level_3_r Gain
--2 -6 0 12 -258113 -1 -1 600 1;
+#X obj 338 329 moonlib/mknob 25 100 0 127 0 0 \$0_level_3_s \$0_level_3_r
+Gain -2 -6 0 12 -258113 -1 -1 0 1;
 #X floatatom 339 357 5 0 0 0 - - -;
 #X text 375 358 db;
-#X obj 445 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_4_s \$0_level_4_r Gain
--2 -6 0 12 -258113 -1 -1 0 1;
+#X obj 445 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_4_s \$0_level_4_r
+Gain -2 -6 0 12 -258113 -1 -1 0 1;
 #X floatatom 446 357 5 0 0 0 - - -;
 #X text 482 358 db;
 #X obj 138 181 hradio 15 1 0 2 \$0-phase-1-s \$0-phase-1-r Phase_+/-
@@ -433,13 +433,9 @@
 0 -8 0 10 -262144 -1 -1 0;
 #X text 421 253 0db;
 #X text 473 254 +20db;
-#X text 100 405 A;
-#X text 182 405 B;
-#X text 268 405 1;
-#X text 351 405 2;
-#X text 437 405 3;
-#X text 520 405 4;
-#N canvas 240 51 948 644 state-saving-multiple-instances 1;
+#X text 100 402 A;
+#X text 182 402 B;
+#N canvas 240 56 948 644 state-saving-multiple-instances 0;
 #X obj 138 29 loadbang;
 #X obj 729 407 textfile;
 #X msg 703 331 rewind;
@@ -774,7 +770,7 @@ and READ sides;
 #X connect 51 0 52 0;
 #X connect 53 0 54 0;
 #X restore 121 572 pd state-saving-via-preset-manager-module;
-#N canvas 396 31 798 399 parameter-nudging-system 1;
+#N canvas 396 56 798 399 parameter-nudging-system 0;
 #X obj 56 29 r \$0-noise-lowpass-s;
 #X obj 54 187 r \$0-noise-volume-s;
 #X obj 56 79 clip 0 127;
@@ -947,6 +943,10 @@ parameter;
 #X text 117 489 Open each for details;
 #X text 251 679 <---these are required but do not need to be changed
 ;
+#X text 263 402 Ch1;
+#X text 347 402 Ch2;
+#X text 432 402 Ch3;
+#X text 508 402 Ch4;
 #X connect 0 0 89 0;
 #X connect 1 0 2 0;
 #X connect 1 0 3 0;
@@ -1048,7 +1048,7 @@ parameter;
 #X connect 119 0 34 0;
 #X connect 120 0 51 0;
 #X connect 121 0 68 0;
-#X connect 137 0 139 0;
-#X connect 139 0 140 0;
-#X connect 140 0 138 0;
+#X connect 133 0 135 0;
+#X connect 135 0 136 0;
+#X connect 136 0 134 0;
 #X coords 0 -1 1 1 430 320 2 100 100;
