@@ -1,4 +1,4 @@
-#N canvas 26 56 1254 676 10;
+#N canvas 26 98 1254 676 10;
 #X declare -lib moonlib;
 #X obj 590 324 r \$0_level_1_s;
 #X obj 590 52 r \$0-phase-1-s;
@@ -79,7 +79,7 @@
 #X connect 31 0 3 1;
 #X connect 31 0 5 2;
 #X connect 31 0 30 0;
-#X restore 561 297 pd limiter;
+#X restore 560 297 pd limiter;
 #X obj 620 244 r \$0-limiter-1-s;
 #X obj 642 270 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -177,7 +177,7 @@
 #X obj 325 136 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 15 -228856
 -66577 0;
 #X obj 138 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_1_s \$0_level_1_r
-Gain -2 -6 0 12 -258113 -1 -1 0 1;
+Gain -2 -6 0 12 -258113 -1 -1 1400 1;
 #X floatatom 138 356 5 0 0 0 - - -;
 #X text 174 355 db;
 #X obj 240 328 moonlib/mknob 25 100 0 127 0 0 \$0_level_2_s \$0_level_2_r
@@ -947,6 +947,11 @@ parameter;
 #X text 347 402 Ch2;
 #X text 432 402 Ch3;
 #X text 508 402 Ch4;
+#X obj 1138 24 inlet~ four;
+#X obj 557 20 inlet~ one;
+#X obj 691 90 loadbang;
+#X text 101 100 ch1;
+#X text 507 100 ch4;
 #X connect 0 0 89 0;
 #X connect 1 0 2 0;
 #X connect 1 0 3 0;
@@ -1051,4 +1056,10 @@ parameter;
 #X connect 133 0 135 0;
 #X connect 135 0 136 0;
 #X connect 136 0 134 0;
+#X connect 147 0 71 0;
+#X connect 148 0 20 0;
+#X connect 149 0 4 0;
+#X connect 149 0 25 0;
+#X connect 149 0 42 0;
+#X connect 149 0 59 0;
 #X coords 0 -1 1 1 430 320 2 100 100;
