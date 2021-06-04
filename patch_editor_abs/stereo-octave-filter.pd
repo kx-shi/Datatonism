@@ -189,10 +189,10 @@
 -7 140 0 10 -262144 -1 -1 0 1;
 #X msg 1090 342 2;
 #X obj 1089 315 loadbang;
-#X obj 254 161 tgl 15 0 \$0-feedthrough-a-s \$0-feedthrough-a-r Feedthrough_A
--25 24 0 10 -262144 -1 -1 0 1;
-#X obj 350 161 tgl 15 0 \$0-feedthrough-b-s \$0-feedthrough-b-r Feedthrough_B
--25 24 0 10 -262144 -1 -1 0 1;
+#X obj 254 161 tgl 15 0 \$0-feedthrough-oct-a-s \$0-feedthrough-oct-a-r
+Feedthrough_A -25 24 0 10 -262144 -1 -1 0 1;
+#X obj 350 161 tgl 15 0 \$0-feedthrough-oct-b-s \$0-feedthrough-oct-b-r
+Feedthrough_B -25 24 0 10 -262144 -1 -1 0 1;
 #X obj 726 665 outlet~;
 #X obj 628 302 pack 0 30;
 #X obj 628 278 == 0;
