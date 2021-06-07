@@ -40,7 +40,7 @@ B -12 15 0 12 -258113 -262144 -1 0 1;
 #X obj 383 574 dbtorms~;
 #X obj 499 138 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 15 -228856
 -66577 0;
-#N canvas 104 25 1165 679 state-saving-multiple-instances 0;
+#N canvas 104 56 1165 676 state-saving-multiple-instances 0;
 #X obj 233 37 loadbang;
 #X obj 1555 192 textfile;
 #X msg 1529 116 rewind;
